@@ -1,0 +1,30 @@
+{
+	"achievements" :
+		[
+			{
+				"ID" : "achievement001",
+				"text" : "Has vacilado a un developer. La ira de los bits caera sobre ti",
+				"imageSource" : "Images/UI/achievement1"
+			},
+			{
+				"ID" : "achievement002",
+				"text" : "Este es el texto del logro 2",
+				"imageSource" : "Images/UI/achievement2"
+			},
+			{
+				"ID" : "achievement003",
+				"text" : "Este es el texto del logro 3",
+				"imageSource" : "Images/UI/achievement3"
+			},
+			{
+				"ID" : "achievement004",
+				"text" : "Este es el texto del logro 4",
+				"imageSource" : "Images/UI/achievement4"
+			},
+			{
+				"ID" : "achievement005",
+				"text" : "Este es el texto del logro 5",
+				"imageSource" : "Images/UI/achievement5"
+			}
+		]
+}

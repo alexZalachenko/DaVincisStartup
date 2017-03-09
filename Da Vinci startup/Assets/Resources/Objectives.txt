@@ -1,0 +1,25 @@
+{
+	"objectives" :
+		[
+			{
+				"ID" : "objective001",
+				"text" : "Huye antes de que las cosas se pongan feas"
+			},
+			{
+				"ID" : "objective002",
+				"text" : "Este es el texto del objetivo 2"
+			},
+			{
+				"ID" : "objective003",
+				"text" : "Este es el texto del objetivo 3"
+			},
+			{
+				"ID" : "objective004",
+				"text" : "Este es el texto del objetivo 4"
+			},
+			{
+				"ID" : "objective005",
+				"text" : "Este es el texto del objetivo 5"
+			}
+		]
+}

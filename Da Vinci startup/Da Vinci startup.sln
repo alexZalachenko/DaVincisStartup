@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Da Vinci startup.Plugins", "Da Vinci startup.Plugins.csproj", "{723550FF-AFEA-9126-E644-3A96F6827A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Da Vinci startup", "Da Vinci startup.csproj", "{927C3397-2E63-9CA0-A93D-64BA1138A4F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723550FF-AFEA-9126-E644-3A96F6827A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723550FF-AFEA-9126-E644-3A96F6827A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723550FF-AFEA-9126-E644-3A96F6827A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723550FF-AFEA-9126-E644-3A96F6827A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927C3397-2E63-9CA0-A93D-64BA1138A4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927C3397-2E63-9CA0-A93D-64BA1138A4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927C3397-2E63-9CA0-A93D-64BA1138A4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927C3397-2E63-9CA0-A93D-64BA1138A4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

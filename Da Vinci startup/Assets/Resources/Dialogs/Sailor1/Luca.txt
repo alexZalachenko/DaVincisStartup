@@ -1,0 +1,100 @@
+{
+  "created_at": "2017-01-30T18:39:34Z",
+  "title": "Untitled Story",
+  "url_key": "vwh9",
+  "updated_at": "2017-01-30T19:11:24Z",
+  "data": {
+    "allowCheckpoints": false,
+    "stitches": {
+      "puesTomaUnLingot": {
+        "content": [
+          "Pues toma un lingote de oro",
+          {
+            "linkPath": "ahoraLargoDeAqui",
+            "option": "Gracias",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+          {
+            "flagName": "tienesdinero"
+          },
+          {
+            "objective": "Gastate el oro"
+          },
+          {
+            "achievement": "achievement001"
+          }
+        ]
+      },
+      "ahoraLargoDeAqui": {
+        "content": [
+          "Ahora largo de aqui",
+          {
+            "linkPath": "queTeLargues",
+            "option": "Venga, adios",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"flagName": "exit"
+          }
+        ]
+      },
+      "puesVale": {
+        "content": [
+          "Pues vale",
+          {
+            "linkPath": "quieresDinero",
+            "option": "Adios",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"flagName": "exit"
+          }
+        ]
+      },
+      "blankStitch": {
+        "content": [
+          ""
+        ]
+      },
+      "quieresDinero": {
+        "content": [
+          "Hola Luca, Quieres dinero?",
+          {
+            "linkPath": "puesTomaUnLingot",
+            "option": "Si",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+          {
+            "linkPath": "puesVale",
+            "option": "No",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+          {
+            "pageNum": 1
+          }
+        ]
+      },
+      "queTeLargues": {
+        "content": [
+          "Que te largues",
+          {
+            "linkPath": "blankStitch",
+            "option": "Pero tio...",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"flagName": "exit"
+          }
+        ]
+      }
+    },
+    "editorData": {
+      "libraryVisible": false,
+      "textSize": 0,
+      "authorName": "Anonymous",
+      "playPoint": "blankStitch"
+    },
+    "initial": "quieresDinero",
+    "optionMirroring": true
+  }
+}
