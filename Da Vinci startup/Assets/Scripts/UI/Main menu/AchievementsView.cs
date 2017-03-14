@@ -26,14 +26,23 @@ public class AchievementsView : MonoBehaviour {
         LoadAchievements();
     }
 
+
+    private void SetAchievementImage(Image p_image, int p_index)
+    {
+        p_image.sprite = c_achievementSprites[p_index];
+        if (!c_achievements[p_index].Unlocked)
+            p_image.color = new Color(0.2f, 0.2f, 0.2f, 1);
+        else
+            p_image.color = new Color(1, 1, 1, 1);
+    }
+
     private void LoadAchievements()
     {
         c_achievements = AchievementsManager.Instance.Achievements;
+        SetAchievementImage(c_leftAchievement, c_selectedAchievement - 1);
+        SetAchievementImage(c_midAchievement, c_selectedAchievement);
+        SetAchievementImage(c_rightAchievement, c_selectedAchievement + 1);
 
-        c_leftAchievement.sprite = c_achievementSprites[c_selectedAchievement - 1];
-        c_midAchievement.sprite = c_achievementSprites[c_selectedAchievement];
-        c_rightAchievement.sprite = c_achievementSprites[c_selectedAchievement + 1];
-            
         c_achievementText.text = c_achievements[c_selectedAchievement].Text;
 
         int t_unlockedAchievements = 0;
@@ -54,13 +63,12 @@ public class AchievementsView : MonoBehaviour {
             c_leftAchievement.color = new Color(1, 1, 1, 0);
         else
         {
-            c_leftAchievement.sprite = c_achievementSprites[c_selectedAchievement - 1];
+            SetAchievementImage(c_leftAchievement, c_selectedAchievement - 1);
             c_rightAchievement.color = new Color(1, 1, 1, 1);
         }
             
-        c_midAchievement.sprite = c_achievementSprites[c_selectedAchievement];
-        c_rightAchievement.sprite = c_achievementSprites[c_selectedAchievement + 1];
-
+        SetAchievementImage(c_midAchievement, c_selectedAchievement);
+        SetAchievementImage(c_rightAchievement, c_selectedAchievement + 1);
         c_achievementText.text = c_achievements[c_selectedAchievement].Text;
     }
 
@@ -69,16 +77,15 @@ public class AchievementsView : MonoBehaviour {
         ++c_selectedAchievement;
         if (c_selectedAchievement == c_achievementSprites.Count)
             --c_selectedAchievement;
-        c_leftAchievement.sprite = c_achievementSprites[c_selectedAchievement - 1];
-        c_midAchievement.sprite = c_achievementSprites[c_selectedAchievement];
+        SetAchievementImage(c_leftAchievement, c_selectedAchievement - 1);
+        SetAchievementImage(c_midAchievement, c_selectedAchievement);
         if (c_selectedAchievement == c_achievementSprites.Count - 1)
             c_rightAchievement.color = new Color(1, 1, 1, 0);
         else
         {
-            c_rightAchievement.sprite = c_achievementSprites[c_selectedAchievement + 1];
+            SetAchievementImage(c_rightAchievement, c_selectedAchievement + 1);
             c_leftAchievement.color = new Color(1, 1, 1, 1);
         }
-
         c_achievementText.text = c_achievements[c_selectedAchievement].Text;
     }
 }

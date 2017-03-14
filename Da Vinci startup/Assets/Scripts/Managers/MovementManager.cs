@@ -19,7 +19,7 @@ public class MovementManager : MonoBehaviour {
     private float c_scenarioRightBound;
 
     private float c_cameraToPlayerDistance;
-    private bool c_canMove = true;
+    private int c_canMove = 0;
     [SerializeField]
     LayerMask c_raycastMask;
     private Camera c_camera;
@@ -41,7 +41,7 @@ public class MovementManager : MonoBehaviour {
 
     void Update()
     {
-        if (c_canMove)
+        if (c_canMove == 0)
         {
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -70,7 +70,7 @@ public class MovementManager : MonoBehaviour {
                 //if touching the UI don't move the player
                 if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
-                    Debug.Log("touched the UI");//tocado cualquier elemento en realidad. No entiendo como furula
+                    //Debug.Log("touched the UI");//tocado cualquier elemento en realidad. No entiendo como furula
                     return;
                 }
 
@@ -108,7 +108,7 @@ public class MovementManager : MonoBehaviour {
 
     private void OnConversationStart()
     {
-        c_canMove = false;
+        c_canMove += 1;
         c_mustMove = false;
     }
 
@@ -121,18 +121,18 @@ public class MovementManager : MonoBehaviour {
     private System.Collections.IEnumerator ActivateMovement()
     {
         yield return new WaitForEndOfFrame();// WaitForSeconds(0.5f);
-        c_canMove = true;
+        c_canMove -= 1;
     }
 
     public void SetMovementAllowed(bool p_movementState)
     {
         if (!p_movementState)
         {
-            c_canMove = false;
+            c_canMove -= 1;
             c_mustMove = false;
         }
         else
-            c_canMove = true;
+            c_canMove += 1;
 
         //if (!p_movementState)
         //    OnConversationStart();

@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\UI\Main menu\OptionsView.cs" />
     <Compile Include="Assets\Scripts\UI\Main menu\UINavigationScript.cs" />
     <Compile Include="Assets\Scripts\UI\ObjectiveIndicator.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PopUp.cs" />
   </ItemGroup>
   <ItemGroup>

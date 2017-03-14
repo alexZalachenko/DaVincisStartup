@@ -17,6 +17,7 @@ public class AchievementsManager : GenericSingleton<AchievementsManager> {
     public override void Awake()
     {
         base.Awake();
+        Achievements = new List<Achievement>();
         LoadAchievements();
     }
 
@@ -39,8 +40,13 @@ public class AchievementsManager : GenericSingleton<AchievementsManager> {
         {
             if (Achievements[t_index].ID == p_achievementID)
             {
-                Achievements[t_index].Unlocked = true;
-                NotifyAchievementUnlocked(Achievements[t_index].Text);
+                if (Achievements[t_index].Unlocked == false)
+                {
+                    Achievements[t_index].Unlocked = true;
+                    NotifyAchievementUnlocked(Achievements[t_index].Text);
+                }
+                else
+                    return;
             }
         }
     }
