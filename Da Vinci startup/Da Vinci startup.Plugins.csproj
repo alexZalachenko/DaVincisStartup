@@ -85,6 +85,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Achievements.txt" />
+    <None Include="Assets\Resources\Dialogs\Citizien\Citizien1\Citizien1.txt" />
+    <None Include="Assets\Resources\Dialogs\Citizien\Citizien2\Citizien2.txt" />
+    <None Include="Assets\Resources\Dialogs\Citizien\Citizien3\Citizien3.txt" />
+    <None Include="Assets\Resources\Dialogs\Citizien\Citizien4\Citizien4.txt" />
+    <None Include="Assets\Resources\Dialogs\Citizien\Citizien5\Citizien5.txt" />
     <None Include="Assets\Resources\Dialogs\Developer\Leonardo.txt" />
     <None Include="Assets\Resources\Dialogs\Developer\Luca.txt" />
     <None Include="Assets\Resources\Dialogs\Developer\Salai.txt" />

@@ -1,0 +1,118 @@
+{
+  "data": {
+    "stitches": {
+
+				"initial": {
+						"content": [
+								"¿Que te paza illo?",
+								{
+								  "linkPath": "oleTuMi",
+								  "option": "Hola caballero",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "queVivaEl",
+								  "option": "Hablas como con una sandalia en la boca",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"oleTuMi": {
+						"content": [
+								"Ole tu mi arma",
+								{
+								  "linkPath": "florenciaTieneUn",
+								  "option": "Hace un bonito dia, ¿Verdad?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"queVivaEl": {
+						"content": [
+								"¡Que viva el zur de Italia!",
+								{
+								  "linkPath": "florenciaTieneUn",
+								  "option": "Hace un bonito dia, ¿Verdad?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"florenciaTieneUn": {
+						"content": [
+								"Florencia tiene un colo especia",
+								{
+								  "linkPath": "posMiraMacabo",
+								  "option": "¿Y que haces tu por aqui?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "hostiaTuMi",
+								  "option": "Sera por la boina de contaminacion",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"posMiraMacabo": {
+						"content": [
+								"Pos mira macabo de levanta de la ziezta y me dixo: vamo a da un pazeo que me lo merehco",
+								{
+								  "linkPath": "buenoMeVoy",
+								  "option": "Ah muy bien",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "vagoYoVivo",
+								  "option": "¿No es usted un poco vago?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"buenoMeVoy": {
+						"content": [
+								"Bueno me voy a comerme un salmorejo",
+								{
+								  "linkPath": "initial",
+								  "option": "Adios, adios",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				},
+				"vagoYoVivo": {
+						"content": [
+								"¿Vago yo? Vivo la vida de forma relajada. Ale, me voy mas ofendio",
+								{
+								  "linkPath": "initial",
+								  "option": "Adios, adios",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				},
+				"hostiaTuMi": {
+						"content": [
+								"Hostia tu, mi boina. Que me la dejao en el bar. ¡Me voy!",
+								{
+								  "linkPath": "initial",
+								  "option": "Adios, adios",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				}
+
+    },
+    "initial": "initial"
+  }
+}	

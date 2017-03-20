@@ -1,0 +1,96 @@
+{
+  "data": {
+    "stitches": {
+
+				"initial": {
+						"content": [
+								"Hola joven, ¿Tienes un minuto?",
+								{
+								  "linkPath": "miraEsQue",
+								  "option": "Si claro. ¿Que pasa?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "miraEsQue",
+								  "option": "¿Vas vestido con una cortina?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+								,
+								{
+								  "linkPath": "peroPorFavor",
+								  "option": "Dejame, estoy ocupado",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"miraEsQue": {
+						"content": [
+								"Mira es que voy a Roma pero he perdido el billete del carruaje y no tengo mas dinero...",
+								{
+								  "linkPath": "soyAyudanteDel",
+								  "option": "A Roma...",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"soyAyudanteDel": {
+						"content": [
+								"Soy ayudante del Papa. Si me das dinero para el viaje me asegurare de que te lo devuelva",
+								{
+								  "linkPath": "pringado",
+								  "option": "Claro buen hombre. Lo que sea por ayudar a un hombre de dios",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "teJuroQue",
+								  "option": "No suena muy creible...",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"teJuroQue": {
+						"content": [
+								"Te juro que es verdad. Soy el cardenal de Edimburgo",
+								{
+								  "linkPath": "peroPorFavor",
+								  "option": "¿Pero no eras ayudante del Papa?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"peroPorFavor": {
+						"content": [
+								"Pero por favor...",
+								{
+								  "linkPath": "initial",
+								  "option": "¡Que te largues!",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				},
+				"pringado": {
+						"content": [
+								"Pringado...",
+								{
+								  "linkPath": "initial",
+								  "option": "¿Eh?",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				}
+
+    },
+    "initial": "initial"
+  }
+}	

@@ -152,11 +152,6 @@ public class JSONParser : MonoBehaviour
             string t_optionText = c_currentStitch["content"][t_index]["option"];
             if (t_optionText != null && t_optionText == p_optionText)
             {
-                //is it a empty linkpath?
-                if (!c_currentStitch["content"][t_index]["linkPath"].AsBool)
-                    ConversationEnded = true;
-                else
-                    c_currentStitch = c_stitches[c_currentStitch["content"][t_index]["linkPath"]];
                 //found an objective on the taken choice
                 if (c_currentStitch["content"][t_index]["objective"] != null)
                     ObjectiveAchieved(c_currentStitch["content"][t_index]["objective"]);
@@ -167,6 +162,11 @@ public class JSONParser : MonoBehaviour
                 if (c_currentStitch["content"][t_index]["flagName"] != null &&
                     c_currentStitch["content"][t_index]["flagName"].ToString() == "\"exit\"")
                     ConversationEnded = true;
+                //is it a empty linkpath?
+                if (!c_currentStitch["content"][t_index]["linkPath"].AsBool)
+                    ConversationEnded = true;
+                else
+                    c_currentStitch = c_stitches[c_currentStitch["content"][t_index]["linkPath"]];
                 break;
             }
         }

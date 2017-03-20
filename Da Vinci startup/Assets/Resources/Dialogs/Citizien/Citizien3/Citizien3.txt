@@ -1,0 +1,125 @@
+{
+  "data": {
+    "stitches": {
+
+			"initial": {
+					"content": [
+							"Chst, chst... Eh tu...",
+							{
+							  "linkPath": "claroQueTe",
+							  "option": "¿Eh?¿Me dices a mi?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "ehVale",
+							  "option": "Perdona, no hablo con desconocidos",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"ehVale": {
+					"content": [
+							"Eh... vale",
+							{
+							  "linkPath": "init",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"claroQueTe": {
+					"content": [
+							"Claro que te digo a ti ¿Contraseña?",
+							{
+							  "linkPath": "vayaCreoQue",
+							  "option": "¿Contraseña?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaCreoQue",
+							  "option": "Cafe con leche in piazza del duomo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "uffYaPensaba",
+							  "option": "Los florentinos muy florentinos y mucho florentinos",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vayaCreoQue": {
+					"content": [
+							"Vaya, creo que me he equivocado de tipo",
+							{
+							  "linkPath": "initial",
+							  "option": "Pues eso parece",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"uffYaPensaba": {
+					"content": [
+							"Uff ya pensaba que eras poli. ¿Quieres un poco de opio?",
+							{
+							  "linkPath": "loPagaMiguel",
+							  "option": "Claro hombre. Para la imaginacion",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "buenoMiraMejor",
+							  "option": "Mi mama ya me advirtio de esto",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoMiraMejor": {
+					"content": [
+							"Bueno, mira, mejor lo dejamos...",
+							{
+							  "linkPath": "initial",
+							  "option": "¡Drogainomano!",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"loPagaMiguel": {
+					"content": [
+							"Lo paga Miguel Angel, ¿Verdad?",
+							{
+							  "linkPath": "aquiTienesTomalo",
+							  "option": "Eh... ¡Pues claro!",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"aquiTienesTomalo": {
+					"content": [
+							"Aqui tienes. Tomalo con prudencia",
+							{
+							  "linkPath": "initial",
+							  "option": "A tu salud hombre",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+
+    },
+    "initial": "initial"
+  }
+}	

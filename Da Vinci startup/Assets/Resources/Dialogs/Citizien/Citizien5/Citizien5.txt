@@ -1,0 +1,152 @@
+{
+  "data": {
+    "stitches": {
+
+				"initial": {
+						"content": [
+								"Hola, buenos dias",
+								{
+								  "linkPath": "hasOidoHablar",
+								  "option": "Hola, buenas",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "claroQueNo",
+								  "option": "¿Vas a venderme algo?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"hasOidoHablar": {
+						"content": [
+								"¿Has oido hablar de AVSG?",
+								{
+								  "linkPath": "teHabloEn",
+								  "option": "Pues no. Suena a tratamiento capilar",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "valePuesOtro",
+								  "option": "Ni tampoco quiero",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"claroQueNo": {
+						"content": [
+								"Claro que no, buen hombre",
+								{
+								  "linkPath": "hasOidoHablar",
+								  "option": "Bueno, sigue",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"teHabloEn": {
+						"content": [
+								"Te hablo en nombre de la Asociacion de victimas de saqueos germanicos",
+								{
+								  "linkPath": "conSoloUna",
+								  "option": "Cuentame mas",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "conSoloUna",
+								  "option": "Ya sabia yo que me ibas a vender algo",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"valePuesOtro": {
+						"content": [
+								"Vale pues otro dia te contare mas",
+								{
+								  "linkPath": "initial",
+								  "option": "Adios",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				},
+				"conSoloUna": {
+						"content": [
+								"Con solo una firma puedes ayudar a miles de familias sin recursos",
+								{
+								  "linkPath": "estasASolo",
+								  "option": "¿Solo firmar? ¿Sin pagar nada?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "estasASolo",
+								  "option": "Bueno si es solo firmar...",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"estasASolo": {
+						"content": [
+								"Estas a solo una firma de ayudar a millones de personas necesitadas ¡Y de obsequio un trozo de la cruz de Jesus!",
+								{
+								  "linkPath": "muchasGraciasAhora",
+								  "option": "Venga, lo firmo",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"muchasGraciasAhora": {
+						"content": [
+								"¡Muchas gracias! Ahora solo falta acompañar tu firma de una donacion obligatoria. ¿Con cuanto quieres contribuir?",
+								{
+								  "linkPath": "porSupuestoPodrias",
+								  "option": "¿Con 100 florines es suficiente?",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								},
+								{
+								  "linkPath": "oyeCreoQue",
+								  "option": "Empezare por tu sangrante y recien cortada mano",
+								  "ifConditions": false,
+								  "notIfConditions": false
+								}
+				        ]
+				},
+				"oyeCreoQue": {
+						"content": [
+								"Oye creo que me llaman por alli. Otro dia terminamos la donacion. ¡Adios!",
+								{
+								  "linkPath": "initial",
+								  "option": "Capullo...",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				},
+				"porSupuestoPodrias": {
+						"content": [
+								"¡Por supuesto! ¿Podrias darmelo ya? Dejemos lo de la firma para otro dia",
+								{
+								  "linkPath": "initial",
+								  "option": "Claro. Gracias por este trabajo que haces",
+								  "ifConditions": false,
+								  "notIfConditions": false,
+								  "flagName": "exit"
+								}
+				        ]
+				}
+
+    },
+    "initial": "initial"
+  }
+}	

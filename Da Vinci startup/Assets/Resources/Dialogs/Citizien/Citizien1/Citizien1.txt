@@ -1,0 +1,130 @@
+{
+  "data": {
+    "stitches": {
+
+			"initial": {
+					"content": [
+							"Hola, ¿Que tal?",
+							{
+							  "linkPath": "buenoNoMe",
+							  "option": "Hola. Bien ¿Y tu?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaEsoDe",
+							  "option": "Borracho como un irlandes",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "menudoEstupidoEres",
+							  "option": "¿A ti que te importa?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoNoMe": {
+					"content": [
+							"Bueno, no me puedo quejar. Con el rey Lorenzo vivimos muy bien",
+							{
+							  "linkPath": "puesSiBueno",
+							  "option": "Es un gran monarca",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "cuidadoConLo",
+							  "option": "Es un gran borracho",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vayaEsoDe": {
+					"content": [
+							"Vaya, eso de ser un genio tiene que ser muy duro",
+							{
+							  "linkPath": "vayaImpresionante",
+							  "option": "Pues si. Trabajo mucho todos los dias",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaImpresionante",
+							  "option": "Que va. Al final es todo cuestion de publicidad",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"menudoEstupidoEres": {
+					"content": [
+							"Menudo estupido eres",
+							{
+							  "linkPath": "initial",
+							  "option": "Pierdete",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"vayaImpresionante": {
+					"content": [
+							"Vaya, impresionante",
+							{
+							  "linkPath": "initial",
+							  "option": "Un placer hablar contigo",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"puesSiBueno": {
+					"content": [
+							"Pues si. Bueno tengo que irme",
+							{
+							  "linkPath": "initial",
+							  "option": "Que tengas un buen dia",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"cuidadoConLo": {
+					"content": [
+							"Cuidado con lo que dices. Podrian arrestarte por traicion",
+							{
+							  "linkPath": "creoQueNo",
+							  "option": "¿Crees que un genio no tiene armas?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "creoQueNo",
+							  "option": "Nadie se atrevera a tocarme",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"creoQueNo": {
+					"content": [
+							"Creo que no deberiamos seguir hablando",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios, cobarde",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}	

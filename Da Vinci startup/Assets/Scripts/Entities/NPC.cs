@@ -9,7 +9,9 @@ public class NPC : ClickableEntity, IPointerClickHandler
     public event OnNPCInteraction OnNPCInteractionEvent;
 
     [SerializeField]
-    string c_filePath;
+    private string c_filePath;
+    [SerializeField]
+    private bool c_shareConversationFile;
     private string c_conversationFileLeonardo;
     private string c_conversationFileLuca;
     private string c_conversationFileSalai;
@@ -40,9 +42,14 @@ public class NPC : ClickableEntity, IPointerClickHandler
 
     private void InitialiseFilePaths()
     {
-        StringBuilder t_conversationFile = new StringBuilder();
-        c_conversationFileLeonardo = t_conversationFile.Append(c_filePath).Append("Leonardo").ToString();
-        c_conversationFileLuca = t_conversationFile.Replace("Leonardo", "Luca").ToString();
-        c_conversationFileSalai = t_conversationFile.Replace("Luca", "Salai").ToString();
+        if (!c_shareConversationFile)
+        {
+            StringBuilder t_conversationFile = new StringBuilder();
+            c_conversationFileLeonardo = t_conversationFile.Append(c_filePath).Append("Leonardo").ToString();
+            c_conversationFileLuca = t_conversationFile.Replace("Leonardo", "Luca").ToString();
+            c_conversationFileSalai = t_conversationFile.Replace("Luca", "Salai").ToString();
+        }
+        else
+            c_conversationFileLeonardo = c_conversationFileLuca = c_conversationFileSalai = c_filePath;
     }
 }
