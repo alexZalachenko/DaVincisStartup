@@ -3,17 +3,17 @@
 		[
 			{
 				"ID" : "achievement001",
-				"text" : "Has vacilado a un developer. La ira de los bits caera sobre ti",
+				"text" : "La ira de los bits caera sobre ti",
 				"imageSource" : "Images/UI/achievement1"
 			},
 			{
 				"ID" : "achievement002",
-				"text" : "Este es el texto del logro 2",
+				"text" : "Opio conseguido. Es hora de montar una buena fiesta",
 				"imageSource" : "Images/UI/achievement2"
 			},
 			{
 				"ID" : "achievement003",
-				"text" : "Este es el texto del logro 3",
+				"text" : "Has conquistado el corazon de un developer",
 				"imageSource" : "Images/UI/achievement3"
 			},
 			{

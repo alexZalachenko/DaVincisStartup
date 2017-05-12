@@ -1,0 +1,70 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Luca. ¿Quieres ron de contrabando? ¿Tabaco? ¿Opio?",
+							{
+							  "linkPath": "esteEsUn",
+							  "option": "Claro. El ron siempre viene bien",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "noMeDigas",
+							  "option": "No, gracias",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"esteEsUn": {
+					"content": [
+							"Este es un mensaje del gobierno de España: la compraventa de bienes de contrabando esta penada por la ley",
+							{
+							  "linkPath": "noSeQue",
+							  "option": "¿Que?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noSeQue": {
+					"content": [
+							"No se que me ha pasado. Voy a tumbarme un rato",
+							{
+							  "linkPath": "initial",
+							  "option": "Cuidate",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"noMeDigas": {
+					"content": [
+							"No me digas que eres poli. Que te entierro en alta mar",
+							{
+							  "linkPath": "buenoNoTe",
+							  "option": "Tranquilo. Es que tengo trabajo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoNoTe": {
+					"content": [
+							"Bueno, no te entretengo mas. Adios",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

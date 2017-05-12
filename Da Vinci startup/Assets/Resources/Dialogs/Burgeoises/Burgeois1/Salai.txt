@@ -1,0 +1,64 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Salai. Que placer verte por aqui. Me he enterado de lo bien que ha ido ese negocio con el rey",
+							{
+							  "linkPath": "yALos",
+							  "option": "Si. Se moverme por la corte",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "yALos",
+							  "option": "El dinero es mas fuerte que la espada",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"yALos": {
+					"content": [
+							"Y a los monarcas les encanta el oro. ¿Cuanto has sacado en sobrecostes?",
+							{
+							  "linkPath": "siClaroSiempre",
+							  "option": "Hipoteticamente",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"siClaroSiempre": {
+					"content": [
+							"Si, claro. Siempre hipoteticamente. Nadie dice que te hayas enriquecido con sobrecostes",
+							{
+							  "linkPath": "noSabesCuanto",
+							  "option": "Pues un paston",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "noSabesCuanto",
+							  "option": "Mas de lo que puedo gastar",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noSabesCuanto": {
+					"content": [
+							"No sabes cuanto me alegro. Te lo mereces",
+							{
+							  "linkPath": "initial",
+							  "option": "Ha sido un placer verte",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

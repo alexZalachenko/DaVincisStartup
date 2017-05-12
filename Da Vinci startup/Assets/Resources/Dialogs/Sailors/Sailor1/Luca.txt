@@ -1,0 +1,47 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"¡Luca, que alegria! Hacia mucho tiempo que no te pasabas por aqui",
+							{
+							  "linkPath": "trabajandoConLeonardo",
+							  "option": "Hola, hola",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "trabajandoConLeonardo",
+							  "option": "Perdona, estoy muy liado",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"trabajandoConLeonardo": {
+					"content": [
+							"¿Trabajando con Leonardo en algun nuevo invento?",
+							{
+							  "linkPath": "buenoNoQuiero",
+							  "option": "Si. Algo por el estilo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoNoQuiero": {
+					"content": [
+							"Bueno, no quiero molestarte. Hasta otra",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

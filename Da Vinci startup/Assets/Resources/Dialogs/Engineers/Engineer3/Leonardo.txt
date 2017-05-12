@@ -1,0 +1,70 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Buenos dias maestro. ¿Como va el dia?",
+							{
+							  "linkPath": "puesBastanteMal",
+							  "option": "Muy bien. ¿Y tu?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "buenoYoTengo",
+							  "option": "Bastante mal, la verdad...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"puesBastanteMal": {
+					"content": [
+							"Pues bastante mal. Para que te voy a engañar: no es mi mejor momento",
+							{
+							  "linkPath": "elTrabajoQue",
+							  "option": "¿Que te atormenta?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoYoTengo": {
+					"content": [
+							"Bueno, yo tengo peores problemas, asi que preguntame",
+							{
+							  "linkPath": "initial",
+							  "option": "Mira macho tu eres tonto. Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"elTrabajoQue": {
+					"content": [
+							"El trabajo. Que esta la cosa muy mal en FLorencia. EStoy pensando en irma a los paises germanicos",
+							{
+							  "linkPath": "graciasPorEscucharme",
+							  "option": "Vaya que mal suena. Suerte",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"graciasPorEscucharme": {
+					"content": [
+							"Gracias por escucharme Leo",
+							{
+							  "linkPath": "initial",
+							  "option": "De nada. Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

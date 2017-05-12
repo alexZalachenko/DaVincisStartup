@@ -1,0 +1,115 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Leo. ¿Tienes un momento? Quiero hablarte sobre un tema importante...",
+							{
+							  "linkPath": "heTenidoUna",
+							  "option": "Si, claro. Cuentame",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "valeHablamosEn",
+							  "option": "La verdad es que no",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"heTenidoUna": {
+					"content": [
+							"He tenido una idea fantastica para un invento. ¿Te apetece escucharla?",
+							{
+							  "linkPath": "seMeOcurre",
+							  "option": "Por supuesto",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "valeHablamosEn",
+							  "option": "La verdad es que tengo prisa ahora",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"valeHablamosEn": {
+					"content": [
+							"Vale. Hablamos en otro momento. Que te vaya bien",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"seMeOcurre": {
+					"content": [
+							"Se me ocurre que podria hacer un servicio en el que poner en contacto a carruajes que van a un sitio y gente que quiere ir ahi",
+							{
+							  "linkPath": "asiPuedenCompartir",
+							  "option": "¿Y eso para que?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"asiPuedenCompartir": {
+					"content": [
+							"Asi pueden compartir gastos de transporte y les sale mas barato",
+							{
+							  "linkPath": "noTeParece",
+							  "option": "Es una idiotez. Olvidalo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noTeParece": {
+					"content": [
+							"¿No te parece buena idea?",
+							{
+							  "linkPath": "vayaPuesYo",
+							  "option": "Me parece la peor idea que has tenido jamas",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaPuesYo",
+							  "option": "Es una idea malisima",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vayaPuesYo": {
+					"content": [
+							"Vaya pues yo pensaba que...",
+							{
+							  "linkPath": "valeValeBueno",
+							  "option": "Que te olvides de eso ya",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"valeValeBueno": {
+					"content": [
+							"Vale, vale. Bueno ya hablamos",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

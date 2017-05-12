@@ -1,0 +1,19 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"No puedo hablar contigo.Si el Gran maestre se entera me caera una buena...",
+							{
+							  "linkPath": "initial",
+							  "option": "Vale, no quiero meterte en problemas",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

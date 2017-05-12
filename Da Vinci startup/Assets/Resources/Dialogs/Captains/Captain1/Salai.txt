@@ -1,0 +1,36 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Ja, ja, ja. ¿De donde te has escapado grumete?",
+							{
+							  "linkPath": "vuelveATu",
+							  "option": "Hola. ¿Que tal?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vuelveATu",
+							  "option": "¿De verdad eres capitan?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vuelveATu": {
+					"content": [
+							"Vuelve a tu ratonera pequeño",
+							{
+							  "linkPath": "initial",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

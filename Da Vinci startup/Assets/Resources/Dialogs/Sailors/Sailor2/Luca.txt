@@ -1,0 +1,59 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hombre, Luca. Gracias por curarle el eskorbuto a mi hermano. No se que seria de el sin ti",
+							{
+							  "linkPath": "claroQueSi",
+							  "option": "No me des las gracias",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaNoPensaba",
+							  "option": "No te cobro esta vez",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"claroQueSi": {
+					"content": [
+							"Claro que si. Eres el hombre mas bueno de esta ciudad. ¿Puedo hacer algo por ti?",
+							{
+							  "linkPath": "valeLlevaCuidado",
+							  "option": "No. Solo paseaba",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vayaNoPensaba": {
+					"content": [
+							"Vaya, no pensaba que fueras un ratero como esos medicos de la ciudad. Me das asco. Date el piro",
+							{
+							  "linkPath": "initial",
+							  "option": "Bah, adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"valeLlevaCuidado": {
+					"content": [
+							"Vale. Lleva cuidado. Adios",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

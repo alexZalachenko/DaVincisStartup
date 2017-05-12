@@ -1,0 +1,99 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Maestro Leonardo! Es un placer verte por este tugurio que es el puerto",
+							{
+							  "linkPath": "claroQueSi",
+							  "option": "No, maestro todavia no. Pero pronto podras llamarmelo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "claroQueSi",
+							  "option": "No te creas que a mi me gusta venir al paraiso de las ratas...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"claroQueSi": {
+					"content": [
+							"Claro que si Leonardo. Bueno, ¿Que te trae por esta cloaca?",
+							{
+							  "linkPath": "loSientoSegun",
+							  "option": "Quiero dar una vuelta por el pueblo. ¿Puedo pasar?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "ahPuesNi",
+							  "option": "Ayer vi descargar unos fardos bien entrada la noche...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"ahPuesNi": {
+					"content": [
+							"Ah pues ni idea de eso",
+							{
+							  "linkPath": "aquiNoSe",
+							  "option": "Me preguntaba si tendrias algo para mi...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "aquiNoSe",
+							  "option": "Tal vez 50 florines te refresquen la memoria...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"aquiNoSe": {
+					"content": [
+							"Aqui no se hacen trapicheos raros asi que olvidate de eso. ¿Quieres algo mas?",
+							{
+							  "linkPath": "initial",
+							  "option": "No, dejalo",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"loSientoSegun": {
+					"content": [
+							"Lo siento, segun la normativa ISO 830 no puedes pasar si no llevas los elementos de seguridad necesarios",
+							{
+							  "linkPath": "tienesQueIrte",
+							  "¡option": "Pero si tu no llevas nada!",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "tienesQueIrte",
+							  "option": "¡Volvere!¡Y con casco!",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"tienesQueIrte": {
+					"content": [
+							"Tienes que irte. Lo siento Leonardo",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}	

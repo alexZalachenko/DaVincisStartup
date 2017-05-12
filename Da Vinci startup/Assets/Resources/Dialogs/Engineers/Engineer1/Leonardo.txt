@@ -1,0 +1,94 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Leo. ¿Que tal todo?",
+							{
+							  "linkPath": "andaYA",
+							  "option": "Pues venia a hablar con el Gran maestre",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "ohDiosDime",
+							  "option": "Vengo a robar material del taller",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "vayaHablamosEn",
+							  "option": "Tengo prisa",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"vayaHablamosEn": {
+					"content": [
+							"Vaya. Hablamos en otro momento. Adios",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"ohDiosDime": {
+					"content": [
+							"¡Oh Dios! ¡Dime que no hablabas en serio! ¡Aaaaaaaaargh!",
+							{
+							  "linkPath": "arghNoLo",
+							  "option": "Tranquilo, tranquilo. Que es broma",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"arghNoLo": {
+					"content": [
+							"¡Aaaaaaaaargh! No lo hagas... Por favor...",
+							{
+							  "linkPath": "initial",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"andaYA": {
+					"content": [
+							"Anda. ¿Y a que se debe?",
+							{
+							  "linkPath": "ohLeonardoSe",
+							  "option": "Quiero ser Gran maestre",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "ohDiosDime",
+							  "option": "Voy a abandonar la logia",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"ohLeonardoSe": {
+					"content": [
+							"Oh Leonardo se que lo haras genial. Ve  a hablar con el Gran maestre",
+							{
+							  "linkPath": "initial",
+							  "option": "Gracias. Lo hare",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

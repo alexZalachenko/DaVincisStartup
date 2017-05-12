@@ -10,8 +10,13 @@ public class Player : MonoBehaviour {
     //used when starting conversation to move the camera closer to the player
     private float c_timeToMoveCamera = 1;//in seconds
     private float c_inverseTimeToMoveCamera;
-    private float c_initialCameraPosition = -10;
-    private float c_finalCameraPosition = -2;
+    private Vector3 c_initialPosition;
+    [SerializeField]
+    private float c_cameraMovementZ = -4;
+    [SerializeField]
+    private float c_cameraMovementY = 1;
+    [SerializeField]
+    private float c_cameraMovementX = 1; //it depends on the direction the player is looking
 
     [SerializeField]
     private CharacterSelector.Character c_character;
@@ -40,25 +45,29 @@ public class Player : MonoBehaviour {
 	
 	private void OnConversationStart()
     {
-        StartCoroutine(MoveCamera(c_finalCameraPosition));
+        if (c_playerCamera.gameObject.activeSelf)
+        {
+            c_initialPosition = c_playerCamera.position;
+            Vector3 t_finalPosition = c_playerCamera.position + new Vector3(c_cameraMovementX, c_cameraMovementY, c_cameraMovementZ);
+            StartCoroutine(MoveCamera(t_finalPosition));
+        }
     }
 
     private void OnConversationEnd()
-    {
-        StartCoroutine(MoveCamera(c_initialCameraPosition));
+    { 
+        if (c_playerCamera.gameObject.activeSelf)
+            StartCoroutine(MoveCamera(c_initialPosition)); 
     }
 
-    private IEnumerator MoveCamera(float p_destination)
+    private IEnumerator MoveCamera(Vector3 p_destination)
     {
-        float t_remainingDistance = Mathf.Abs(c_playerCamera.transform.position.z - p_destination);
         
-        Vector3 t_endPosition = c_playerCamera.transform.position;
-        t_endPosition.z = p_destination;
-
+        float t_remainingDistance = (c_playerCamera.transform.position - p_destination).sqrMagnitude;
         while (t_remainingDistance > float.Epsilon)
         {
-            c_playerCamera.transform.position = Vector3.MoveTowards(c_playerCamera.transform.position, t_endPosition, c_inverseTimeToMoveCamera * Time.deltaTime);
-            t_remainingDistance = Mathf.Abs(c_playerCamera.transform.position.z - p_destination);
+            Vector3 t_newPosition = Vector3.MoveTowards(c_playerCamera.transform.position, p_destination, c_inverseTimeToMoveCamera * Time.deltaTime);
+            c_playerCamera.transform.position = t_newPosition;
+            t_remainingDistance = (c_playerCamera.transform.position - p_destination).sqrMagnitude;
             yield return null;
         }
     }

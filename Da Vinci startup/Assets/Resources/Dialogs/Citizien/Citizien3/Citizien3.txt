@@ -23,7 +23,7 @@
 					"content": [
 							"Eh... vale",
 							{
-							  "linkPath": "init",
+							  "linkPath": "initial",
 							  "option": "...",
 							  "ifConditions": false,
 							  "notIfConditions": false,

@@ -1,0 +1,48 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Vaya, vaya pequeño. ¿Pero tu sabes nadar?",
+							{
+							  "linkPath": "talVezUn",
+							  "option": "Pues claro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "loQueYo",
+							  "option": "La verdad es que no",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"loQueYo": {
+					"content": [
+							"Lo que yo decia. Este no es tu sitio. Largate",
+							{
+							  "linkPath": "initial",
+							  "option": "Bueno, adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"talVezUn": {
+					"content": [
+							"Lo que yo decia. Este no es tu sitio. Largate",
+							{
+							  "linkPath": "initial",
+							  "option": "Mira alli, un mono de 3 cabezas",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

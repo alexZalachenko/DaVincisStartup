@@ -1,0 +1,66 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"¿Que tal Salai? ¿Has pensado en el trato que te dije?",
+							{
+							  "linkPath": "hundimosLaEmpresa",
+							  "option": "Refrescame la memoria",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "unaPenaAdios",
+							  "option": "No me interesa",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"hundimosLaEmpresa": {
+					"content": [
+							"Hundimos la empresa de mercantes del puerto, la compramos, construimos casas y nos forramos. Negocio seguro",
+							{
+							  "linkPath": "perfectoTeContactare",
+							  "option": "Suena bastante bien",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "unaPenaAdios",
+							  "option": "Lo siento. No puedo con eso",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"perfectoTeContactare": {
+					"content": [
+							"Perfecto. Te contactare pronto con los detalles",
+							{
+							  "linkPath": "initial",
+							  "option": "Hasta entonces",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"unaPenaAdios": {
+					"content": [
+							"Una pena. Adios",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

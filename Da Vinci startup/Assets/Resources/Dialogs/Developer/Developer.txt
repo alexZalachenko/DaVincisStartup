@@ -1,0 +1,154 @@
+{
+  "data": {
+    "stitches": {
+      "initial": {
+        "content": [
+          "Hola, soy Alex, el desarrollador del juego",
+          {
+            "linkPath": "meAlegroDe",
+            "option": "Ah pues encantado",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+		  {
+            "linkPath": "meEstasInsultando",
+            "option": "Vaya, eres uno de esos frikis de internet",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "meEstasInsultando": {
+        "content": [
+          "¿Me estas insultando?",
+          {
+            "linkPath": "buenoNoPasa",
+            "option": "Perdona hombre, solo bromeaba",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+		  {
+            "linkPath": "cuandoSeInvente",
+            "option": "Si, ya sabes, un comedoritos, un cerebrito, un cuatro ojos...",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"achievement": "achievement001"
+          }
+        ]
+      },
+	  "meAlegroDe": {
+        "content": [
+          "Me alegro de que hayas descargado el juego. ¿Te esta gustando?",
+          {
+            "linkPath": "guayMuchasGracias",
+            "option": "¡Si, es un pasote! ¡Sigue asi!",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"achievement": "achievement003"
+          },
+		  {
+            "linkPath": "vayaEsUna",
+            "option": "No. Me esta provocando un cancer de cornea...",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "buenoNoPasa": {
+        "content": [
+          "Bueno, no pasa nada. Pero tenes menos gracia que pillar la sifilis",
+          {
+            "linkPath": "meAlegroDe",
+            "option": "..."
+          }
+        ]
+      },
+	  "cuandoSeInvente": {
+        "content": [
+          "Cuando se invente el ordenador te vas a acordar de esto...",
+          {
+            "linkPath": "buenoNoPasa",
+            "option": "Perdona hombre, solo bromeaba",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "guayMuchasGracias": {
+        "content": [
+          "¡Guay! ¡Muchas gracias! ¿Me echas una mano para que mas gente lo disfrute?",
+          {
+            "linkPath": "enElMenu",
+            "option": "Por supuesto",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+		  {
+            "linkPath": "graciasPorVenir",
+            "option": "No, mira... Es que tengo que ayudar con una mudanza justo ahora...",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "enElMenu": {
+        "content": [
+          "En el menu principal tienes un boton para ir a Google Play y puntuar el juego. Si le pones 5 estrellas seria la caña",
+          {
+            "linkPath": "graciasPorVenir",
+            "option": "De acuerdo, lo hare",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+		  {
+            "linkPath": "graciasPorVenir",
+            "option": "No, mira... Es que tengo que ayudar con una mudanza justo ahora...",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "vayaEsUna": {
+        "content": [
+          "Vaya, es una pena. ¿Quieres ayudarme a mejorarlo?",
+          {
+            "linkPath": "puedesMandarmeTus",
+            "option": "Vale, te ayudo encantado",
+            "ifConditions": false,
+            "notIfConditions": false
+          },
+		  {
+            "linkPath": "graciasPorVenir",
+            "option": "No, mira... Es que tengo que ayudar con una mudanza justo ahora...",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "puedesMandarmeTus": {
+        "content": [
+          "Puedes mandarme tus comentarios al perfil de LinkedIn que aparece en el menu de inicio. ¡Puedes estar seguro de que me los tomare muy en serio!",
+		  {
+            "linkPath": "graciasPorVenir",
+            "option": "De acuerdo, lo hare",
+            "ifConditions": false,
+            "notIfConditions": false
+          }
+        ]
+      },
+	  "graciasPorVenir": {
+        "content": [
+          "Gracias por venir a hablar conmigo. Puedes venir en cualquier otro momento del juego",
+          {
+            "linkPath": "initial",
+            "option": "Chachi pistachi",
+            "ifConditions": false,
+            "notIfConditions": false,
+			"flagName": "exit"
+          }
+        ]
+      }
+    },
+    "initial": "initial"
+  }
+}

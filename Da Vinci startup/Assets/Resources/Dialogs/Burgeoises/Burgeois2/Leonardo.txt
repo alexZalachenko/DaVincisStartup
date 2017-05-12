@@ -1,0 +1,30 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola. No quiero parecer maleducado pero este sitio no es para ti. No tienes mas que ver las ropas que llevas",
+							{
+							  "linkPath": "aquiVenimosLos",
+							  "option": "¿Que pasa con mi ropa?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"aquiVenimosLos": {
+					"content": [
+							"Aqui venimos los nobles a discutir sobre las cuestiones economicas mas importantes. No es un lugar para ti",
+							{
+							  "linkPath": "initial",
+							  "option": "Bueno, vuelvo otro dia",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

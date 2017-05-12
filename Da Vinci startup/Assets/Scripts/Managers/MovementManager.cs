@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class MovementManager : MonoBehaviour {
 
@@ -67,13 +66,6 @@ public class MovementManager : MonoBehaviour {
                     return;
                 }
 
-                //if touching the UI don't move the player
-                if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-                {
-                    //Debug.Log("touched the UI");//tocado cualquier elemento en realidad. No entiendo como furula
-                    return;
-                }
-
                 //check if the touch is further the scene bounds
                 if      (c_scenarioLeftBound > t_origin.x)
                 {
@@ -115,7 +107,10 @@ public class MovementManager : MonoBehaviour {
     private void OnConversationEnd()
     {
         //activate movement after a short delay, so the player won't move with the tap on the response
-        StartCoroutine(ActivateMovement());
+        if (gameObject.transform.GetChild(0).gameObject.activeSelf)
+        {
+            StartCoroutine(ActivateMovement());
+        }
     }
 
     private System.Collections.IEnumerator ActivateMovement()
@@ -145,5 +140,10 @@ public class MovementManager : MonoBehaviour {
         Transform t_bounds = GameObject.Find("SceneBounds").transform;
         c_scenarioLeftBound = t_bounds.GetChild(0).transform.position.x;
         c_scenarioRightBound = t_bounds.GetChild(1).transform.position.x;
+    }
+
+    public void ResetMovement()
+    {
+        c_mustMove = false;
     }
 }

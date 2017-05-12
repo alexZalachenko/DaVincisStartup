@@ -1,0 +1,267 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Leonardo, ¿En que puedo ayudarte?",
+							{
+							  "linkPath": "hablaLeonardoNo",
+							  "option": "Vera maestro, queria pedirle una cosa...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "noTengoTiempo",
+							  "option": "¿Me compra un boleto para una excursion del instituto?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Bueno mejor dejelo...",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"hablaLeonardoNo": {
+					"content": [
+							"Habla Leonardo, no tengas miedo",
+							{
+							  "linkPath": "loSeLeonardo",
+							  "option": "Gran maestre llevo muchos años como aprendiz...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "noTengoTiempo",
+							  "option": "Es que es muy viejo y asusta",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noTengoTiempo": {
+					"content": [
+							"No tengo tiempo para tus tonterias. Si no vas a decir nada sensato mejor vete",
+							{
+							  "linkPath": "...",
+							  "option": "Perdone. Era solo una broma para romper el hielo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"...": {
+					"content": [
+							"...",
+							{
+							  "linkPath": "loSeLeonardo",
+							  "option": "Gran maestre llevo muchos años como aprendiz...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"loSeLeonardo": {
+					"content": [
+							"Lo se Leonardo, eres el mejor de nuestros alumnos. El mas brillante",
+							{
+							  "linkPath": "hmm...",
+							  "option": "Es hora de que me convierta en maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "dejateDeBromas",
+							  "option": "Es que me lavo mucho señor",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "dejateDeBromas",
+							  "option": "Mucho mas que usted",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"dejateDeBromas": {
+					"content": [
+							"Dejate de bromas, ¿Que quieres?",
+							{
+							  "linkPath": "hmm...",
+							  "option": "Es hora de que me convierta en maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"hmm...": {
+					"content": [
+							"Hmm...",
+							{
+							  "linkPath": "eresMuyJoven",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "eresMuyJoven",
+							  "option": "¿Le pasa algo?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"eresMuyJoven": {
+					"content": [
+							"Eres muy joven Leonardo",
+							{
+							  "linkPath": "noSe...",
+							  "option": "Soy el mas grande ingeniero de esta ciudad",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "dejateDeTonterias",
+							  "option": "Mona Lisa no dijo lo mismo. Ya sabes...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"dejateDeTonterias": {
+					"content": [
+							"Dejate de tonterias Leonardo",
+							{
+							  "linkPath": "deAcuerdoPero",
+							  "option": "Gran maestre no quiero ser un aprendiz",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noSe...": {
+					"content": [
+							"No se...",
+							{
+							  "linkPath": "dejateDeTonterias",
+							  "option": "¿Me estas llamando enano?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"deAcuerdoPero": {
+					"content": [
+							"De acuerdo, pero tendras que pasar una ultima prueba",
+							{
+							  "linkPath": "tendrasQueCrear",
+							  "option": "De acuerdo. ¿Que es?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "quieresQueTe",
+							  "option": "Pero que plasta eres...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"quieresQueTe": {
+					"content": [
+							"¿Quieres que te mande a fregar el Ponte Vecchio? ¿O te explico la prueba?",
+							{
+							  "linkPath": "tendrasQueCrear",
+							  "option": "De acuerdo. ¿Que es?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"tendrasQueCrear": {
+					"content": [
+							"Tendras que crear una stratup y convertirla en una empresa",
+							{
+							  "linkPath": "noTienesNi",
+							  "option": "Ah claro, una startup",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "",
+							  "option": "¿Una startup?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noTienesNi": {
+					"content": [
+							"No tienes ni idea, ¿Verdad?",
+							{
+							  "linkPath": "unaStartupEs",
+							  "option": "En efecto, pero no",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"unaStartupEs": {
+					"content": [
+							"Una startup es una pequeña empresa cuyo objetivo es el crecimiento",
+							{
+							  "linkPath": "noPensarEn",
+							  "option": "Vale ya lo pillo. Es como una empresa pero en pequeño",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noPensarEn": {
+					"content": [
+							"No, pensar en eso es un error comun. Una startup busca un modelo de negocio rentable y escalable. El problema es que aun no lo tiene. La funcion de la startup es encontrar ese modelo de negocio",
+							{
+							  "linkPath": "exactoUnaStartup",
+							  "option": "¿Para asi consolidarse como una empresa?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"exactoUnaStartup": {
+					"content": [
+							"Exacto. Una startup solo existe de forma temporal hasta que valida un modelo de negocio",
+							{
+							  "linkPath": "veLeonardoCompleta",
+							  "option": "De acuerdo. Estoy listo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "unaStartupEs",
+							  "option": "¿Puedes explicarmelo otra vez?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"veLeonardoCompleta": {
+					"content": [
+							"Ve, Leonardo. Completa este  reto y seras un Gran maeste. Pero no sera facil: el camino del emprendedor esta lleno de dificultades",
+							{
+							  "linkPath": "initial",
+							  "option": "De acuerdo Gran maestre",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}	

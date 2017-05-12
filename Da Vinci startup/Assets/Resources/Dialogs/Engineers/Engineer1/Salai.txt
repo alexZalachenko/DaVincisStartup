@@ -1,0 +1,37 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Vaya, hasta los catetos entran en la logia. ¿No sabes que aqui solo entran ingenieros?",
+							{
+							  "linkPath": "queTePires",
+							  "option": "Huele a titulitis...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Bueno, adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"queTePires": {
+					"content": [
+							"Que te pires pringado",
+							{
+							  "linkPath": "initial",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

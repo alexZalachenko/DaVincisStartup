@@ -1,0 +1,72 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"¡Aloha! He, he, he. ¿Te he contado como viaje a las estrellas con mi barco?",
+							{
+							  "linkPath": "corriaElAño",
+							  "option": "Eh... pues no",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "callaYEscucha",
+							  "option": "Tiene pinta de falso",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"corriaElAño": {
+					"content": [
+							"Corria el año 1517 y yo estaba ligeramente enganchado al opio",
+							{
+							  "linkPath": "cogiMiBarco",
+							  "option": "Aham...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Largarse sigilosamente",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"callaYEscucha": {
+					"content": [
+							"Calla y escucha. Maleducado",
+							{
+							  "linkPath": "corriaElAño",
+							  "option": "...",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Largarse sigilosamente",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"cogiMiBarco": {
+					"content": [
+							"Cogi mi barco, 15 valientesmarineros y provisiones de agua, comida y opio. Y... ya no me acuerdo de mas",
+							{
+							  "linkPath": "initial",
+							  "option": "Vaya. Prometia interesante",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

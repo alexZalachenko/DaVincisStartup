@@ -1,0 +1,30 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola joven Luca. Gracias por curar a mi tripulacion. Tendria la mitad de hombres si no fuera por ti",
+							{
+							  "linkPath": "siNecesitasCualquier",
+							  "option": "Hago lo mejor para la ciudad",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"siNecesitasCualquier": {
+					"content": [
+							"Si necesitas cualquier cosa ven a hablar conmigo",
+							{
+							  "linkPath": "initial",
+							  "option": "Gracias capitan",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

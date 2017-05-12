@@ -1,0 +1,55 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Salai. Tengo un negocio para ti que es perfecto",
+							{
+							  "linkPath": "nuevaRomanaUna",
+							  "option": "Cuentame",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "No me interesa",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"nuevaRomanaUna": {
+					"content": [
+							"Nueva Romana, una empresa que esta expandiendose, busca pequeños inversores como nosotros. Garantizan una rentabilidad del 25%",
+							{
+							  "linkPath": "initial",
+							  "option": "Claro. Cuenta conmigo",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							},
+							{
+							  "linkPath": "buenoTuTe",
+							  "option": "Suena poco creible",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenoTuTe": {
+					"content": [
+							"Bueno, tu te lo pierdes. Mi cuñado dice que se puede ganar mucho dinero con esto",
+							{
+							  "linkPath": "initial",
+							  "option": "Adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

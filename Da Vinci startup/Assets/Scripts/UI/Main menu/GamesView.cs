@@ -12,7 +12,6 @@ public class GamesView : MonoBehaviour {
 
     private void OpenGooglePlay(string p_game)
     {
-        //"market://details?q=pname:com.myCompany.myAppName/"
-        Application.OpenURL("market://details?id=com.example.android");
+        Application.OpenURL("market://details?id=" + p_game);
     }
 }

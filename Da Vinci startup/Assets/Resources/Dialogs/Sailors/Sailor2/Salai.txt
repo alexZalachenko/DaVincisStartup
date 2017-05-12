@@ -1,0 +1,19 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"No puedes estar aqui. Solo marineros y capitanes. Y bueno, ese tipo llamado Luca",
+							{
+							  "linkPath": "initial",
+							  "option": "Vale, disculpa",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

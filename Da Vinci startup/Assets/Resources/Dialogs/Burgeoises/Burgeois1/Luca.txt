@@ -1,0 +1,36 @@
+{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"¿Pero que ropas son esas? En este palacio ya entra hasta la plebe",
+							{
+							  "linkPath": "tienesElGusto",
+							  "option": "Pues a mi me parecen bonitas",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "tienesElGusto",
+							  "option": "Tu no entiendes de moda",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"tienesElGusto": {
+					"content": [
+							"Tienes el gusto propio de la clase media. Vete por favor",
+							{
+							  "linkPath": "initial",
+							  "option": "Pues adios",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

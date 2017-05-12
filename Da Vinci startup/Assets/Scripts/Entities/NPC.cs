@@ -10,6 +10,7 @@ public class NPC : ClickableEntity, IPointerClickHandler
 
     [SerializeField]
     private string c_filePath;
+    //the same conversation file will be used for Leo, Luca and Salai
     [SerializeField]
     private bool c_shareConversationFile;
     private string c_conversationFileLeonardo;

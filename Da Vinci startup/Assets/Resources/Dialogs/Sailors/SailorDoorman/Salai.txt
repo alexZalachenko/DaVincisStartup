@@ -1,0 +1,131 @@
+{
+  "data": {
+    "stitches": {
+
+			"initial": {
+					"content": [
+							"Vaya, vaya... ¿Te has perdido chico rico?",
+							{
+							  "linkPath": "jaJaJa",
+							  "option": "Pues no. Quiero entrar al pueblo",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "masTeVale",
+							  "option": "Gracias por lo de rico. Tu tienes bastante pinta de pasar hambre",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"masTeVale": {
+					"content": [
+							"Mas te vale largarte si no quieres estar cagando dientes una semana entera",
+							{
+							  "linkPath": "buenoQueDemonios",
+							  "option": "Que no, que no. ¡Era broma!",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "¡Me voy!",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"buenoQueDemonios": {
+					"content": [
+							"Bueno, ¿Que demonios quieres?",
+							{
+							  "linkPath": "jaJaJa",
+							  "option": "Necesito entrar al puerto",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Mira, mejor me largo",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"jaJaJa": {
+					"content": [
+							"Ja, ja, ja. Mira chico, mejor vete  a casa. Este siito no es para gente como tu",
+							{
+							  "linkPath": "yaTeHe",
+							  "option": "Pero... es que necesito entrar",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "initial",
+							  "option": "Bueno, si tu lo dices me voy",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"yaTeHe": {
+					"content": [
+							"Ya te he dicho que no puedes pasar. Podrias hacerte daño ahi dentro",
+							{
+							  "linkPath": "quieroQueTe",
+							  "option": "Ya veo, quieres dinero",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "pareceQueSe",
+							  "option": "Llevo dos meses de gym. Te la estas jugando",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"quieroQueTe": {
+					"content": [
+							"Quiero que te largues. Patan",
+							{
+							  "linkPath": "initial",
+							  "option": "Tu te lo pierdes. ¡Adios!",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"pareceQueSe": {
+					"content": [
+							"Parece que se te olvida entrenar pierna. Tienes las patas de un canario",
+							{
+							  "linkPath": "tienesDosSegundos",
+							  "option": "Joder tio... es por mi genetica",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"tienesDosSegundos": {
+					"content": [
+							"Tienes dos segundos para salir de aqui o me hago una taza con tu craneo",
+							{
+							  "linkPath": "initial",
+							  "option": "Eh... bueno tio ya nos vemos",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}	

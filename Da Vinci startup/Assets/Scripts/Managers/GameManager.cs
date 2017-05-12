@@ -19,9 +19,14 @@ public class GameManager : MonoBehaviour {
         Assert.IsNotNull(c_activeCharacter);
         c_activeCharacterType = CharacterSelector.Character.Leonardo;
         Assert.AreEqual(c_characters.Count, 3, "Found only" + c_characters.Count + "characters in GameManager");
+        Assert.IsNotNull(c_characters[0]);
+        Assert.IsNotNull(c_characters[1]);
+        Assert.IsNotNull(c_characters[2]);
         DeactivateUnselectedCharacters();
-
-        GameObject.Find("CharacterSelector").GetComponent<CharacterSelector>().OnCharacterSelectedEvent += OnCharacterSelected;
+        
+        GameObject t_characterSelector = GameObject.Find("CharacterSelector");
+        Assert.IsNotNull(t_characterSelector, "Character selector not found");
+        t_characterSelector.GetComponent<CharacterSelector>().OnCharacterSelectedEvent += OnCharacterSelected;
     }
 
     private void OnCharacterSelected(CharacterSelector.Character p_character)
@@ -74,6 +79,7 @@ public class GameManager : MonoBehaviour {
         c_activeCharacter.transform.parent = p_newScenario.transform;
         c_activeCharacter.transform.position = p_newPosition;
         c_activeCharacter.GetComponent<MovementManager>().UpdateBounds();
+        c_activeCharacter.GetComponent<MovementManager>().ResetMovement();
     }
 
     public GameObject GetActiveCharacter()

@@ -3,23 +3,107 @@
 		[
 			{
 				"ID" : "objective001",
-				"text" : "Huye antes de que las cosas se pongan feas"
+				"text" : "Habla con el Gran Maestre"
 			},
 			{
 				"ID" : "objective002",
-				"text" : "Este es el texto del objetivo 2"
+				"text" : "Ve al taller"
 			},
 			{
 				"ID" : "objective003",
-				"text" : "Este es el texto del objetivo 3"
+				"text" : "Pide ayuda al maestro Verrochio"
 			},
 			{
 				"ID" : "objective004",
-				"text" : "Este es el texto del objetivo 4"
+				"text" : "Consigue constructores"
 			},
 			{
 				"ID" : "objective005",
-				"text" : "Este es el texto del objetivo 5"
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective006",
+				"text" : "Habla con el maestro Verrochio"
+			},
+			{
+				"ID" : "objective007",
+				"text" : "Consigue financiacion"
+			},
+			{
+				"ID" : "objective008",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective009",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective010",
+				"text" : "Consigue un ingeniero"
+			},
+			{
+				"ID" : "objective011",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective012",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective013",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective014",
+				"text" : "Busca early adopters"
+			},
+			{
+				"ID" : "objective015",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective016",
+				"text" : "Cuentale el fracaso al maestro Verrocchio"
+			},
+			{
+				"ID" : "objective017",
+				"text" : "Habla con el capitan loco"
+			},
+			{
+				"ID" : "objective018",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective019",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective020",
+				"text" : "Busca mas early adopters"
+			},
+			{
+				"ID" : "objective021",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective022",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective023",
+				"text" : "Habla con el burgues"
+			},
+			{
+				"ID" : "objective024",
+				"text" : "Ve al taller"
+			},
+			{
+				"ID" : "objective025",
+				"text" : "Habla con el maestro Verrocchio"
+			},
+			{
+				"ID" : "objective026",
+				"text" : "Habla con el gran maestre"
 			}
 		]
 }
