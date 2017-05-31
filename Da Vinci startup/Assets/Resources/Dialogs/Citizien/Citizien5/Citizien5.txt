@@ -1,10 +1,10 @@
-{
+﻿{
   "data": {
     "stitches": {
 
 				"initial": {
 						"content": [
-								"Hola, buenos dias",
+								"Hola, buenos días",
 								{
 								  "linkPath": "hasOidoHablar",
 								  "option": "Hola, buenas",
@@ -13,7 +13,7 @@
 								},
 								{
 								  "linkPath": "claroQueNo",
-								  "option": "�Vas a venderme algo?",
+								  "option": "¿Vas a venderme algo?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -21,7 +21,7 @@
 				},
 				"hasOidoHablar": {
 						"content": [
-								"�Has oido hablar de AVSG?",
+								"¿Has oído hablar de AVSG?",
 								{
 								  "linkPath": "teHabloEn",
 								  "option": "Pues no. Suena a tratamiento capilar",
@@ -49,16 +49,16 @@
 				},
 				"teHabloEn": {
 						"content": [
-								"Te hablo en nombre de la Asociacion de victimas de saqueos germanicos",
+								"Te hablo en nombre de la Asociacion de victimas de saqueos germánicos",
 								{
 								  "linkPath": "conSoloUna",
-								  "option": "Cuentame mas",
+								  "option": "Cuentame más",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								},
 								{
 								  "linkPath": "conSoloUna",
-								  "option": "Ya sabia yo que me ibas a vender algo",
+								  "option": "Ya sabía yo que me ibas a vender algo",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -66,7 +66,7 @@
 				},
 				"valePuesOtro": {
 						"content": [
-								"Vale pues otro dia te contare mas",
+								"Vale pues otro dia te contaré más",
 								{
 								  "linkPath": "initial",
 								  "option": "Adios",
@@ -81,7 +81,7 @@
 								"Con solo una firma puedes ayudar a miles de familias sin recursos",
 								{
 								  "linkPath": "estasASolo",
-								  "option": "�Solo firmar? �Sin pagar nada?",
+								  "option": "¿Solo firmar? ¿Sin pagar nada?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								},
@@ -95,7 +95,7 @@
 				},
 				"estasASolo": {
 						"content": [
-								"Estas a solo una firma de ayudar a millones de personas necesitadas �Y de obsequio un trozo de la cruz de Jesus!",
+								"Estas a solo una firma de ayudar a millones de personas necesitadas ¿Y de obsequio un trozo de la cruz de Jesús!",
 								{
 								  "linkPath": "muchasGraciasAhora",
 								  "option": "Venga, lo firmo",
@@ -106,16 +106,16 @@
 				},
 				"muchasGraciasAhora": {
 						"content": [
-								"�Muchas gracias! Ahora solo falta acompa�ar tu firma de una donacion obligatoria. �Con cuanto quieres contribuir?",
+								"¡Muchas gracias! Ahora solo falta acompañar tu firma de una donacion voluntaria obligatoria. ¿Con cuánto quieres contribuir?",
 								{
 								  "linkPath": "porSupuestoPodrias",
-								  "option": "�Con 100 florines es suficiente?",
+								  "option": "¿Con 100 florines es suficiente?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								},
 								{
 								  "linkPath": "oyeCreoQue",
-								  "option": "Empezare por tu sangrante y recien cortada mano",
+								  "option": "Empezare por tu sangrante y recién cortada mano",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -123,7 +123,7 @@
 				},
 				"oyeCreoQue": {
 						"content": [
-								"Oye creo que me llaman por alli. Otro dia terminamos la donacion. �Adios!",
+								"Oye creo que me llaman por allí. Otro día terminamos la donación. ¡Adios!",
 								{
 								  "linkPath": "initial",
 								  "option": "Capullo...",
@@ -135,7 +135,7 @@
 				},
 				"porSupuestoPodrias": {
 						"content": [
-								"�Por supuesto! �Podrias darmelo ya? Dejemos lo de la firma para otro dia",
+								"¡Por supuesto! ¿Podrías dármelo ya? Dejemos lo de la firma para otro día",
 								{
 								  "linkPath": "initial",
 								  "option": "Claro. Gracias por este trabajo que haces",

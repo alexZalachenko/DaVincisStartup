@@ -1,4 +1,4 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
@@ -6,7 +6,7 @@
 							"Hola. No quiero parecer maleducado pero este sitio no es para ti. No tienes mas que ver las ropas que llevas",
 							{
 							  "linkPath": "aquiVenimosLos",
-							  "option": "�Que pasa con mi ropa?",
+							  "option": "¿Qué pasa con mi ropa?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -14,10 +14,10 @@
 			},
 			"aquiVenimosLos": {
 					"content": [
-							"Aqui venimos los nobles a discutir sobre las cuestiones economicas mas importantes. No es un lugar para ti",
+							"Aqui venimos los nobles a discutir sobre las cuestiones económicas más importantes. No es un lugar para ti",
 							{
 							  "linkPath": "initial",
-							  "option": "Bueno, vuelvo otro dia",
+							  "option": "Bueno, vuelvo otro día",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

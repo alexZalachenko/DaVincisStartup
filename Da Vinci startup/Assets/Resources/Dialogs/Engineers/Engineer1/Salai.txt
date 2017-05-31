@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Vaya, hasta los catetos entran en la logia. �No sabes que aqui solo entran ingenieros?",
+							"Vaya, hasta los catetos entran en la logia. ¿No sabes que aquí solo entran ingenieros?",
 							{
 							  "linkPath": "queTePires",
 							  "option": "Huele a titulitis...",

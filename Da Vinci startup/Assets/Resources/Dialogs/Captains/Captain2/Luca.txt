@@ -1,9 +1,9 @@
-{
+ï»¿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola Luca. ¿Quieres ron de contrabando? ¿Tabaco? ¿Opio?",
+							"Hola Luca. Â¿Quieres ron de contrabando? Â¿Tabaco? Â¿Opio?",
 							{
 							  "linkPath": "esteEsUn",
 							  "option": "Claro. El ron siempre viene bien",
@@ -20,10 +20,10 @@
 			},
 			"esteEsUn": {
 					"content": [
-							"Este es un mensaje del gobierno de España: la compraventa de bienes de contrabando esta penada por la ley",
+							"Este es un mensaje del gobierno de EspaÃ±a: la compraventa de bienes de contrabando esta penada por la ley",
 							{
 							  "linkPath": "noSeQue",
-							  "option": "¿Que?",
+							  "option": "Â¿QuÃ©?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -34,7 +34,7 @@
 							"No se que me ha pasado. Voy a tumbarme un rato",
 							{
 							  "linkPath": "initial",
-							  "option": "Cuidate",
+							  "option": "CuÃ­date",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

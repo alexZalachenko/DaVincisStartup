@@ -1,4 +1,4 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
@@ -6,13 +6,13 @@
 							"Hola Salai. Que placer verte por aqui. Me he enterado de lo bien que ha ido ese negocio con el rey",
 							{
 							  "linkPath": "yALos",
-							  "option": "Si. Se moverme por la corte",
+							  "option": "Sí. Se moverme por la corte",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "yALos",
-							  "option": "El dinero es mas fuerte que la espada",
+							  "option": "El dinero es más fuerte que la espada",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -20,10 +20,10 @@
 			},
 			"yALos": {
 					"content": [
-							"Y a los monarcas les encanta el oro. �Cuanto has sacado en sobrecostes?",
+							"Y a los monarcas les encanta el oro. ¿Cuánto has sacado en sobrecostes?",
 							{
 							  "linkPath": "siClaroSiempre",
-							  "option": "Hipoteticamente",
+							  "option": "Hipotéticamente",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -31,16 +31,16 @@
 			},
 			"siClaroSiempre": {
 					"content": [
-							"Si, claro. Siempre hipoteticamente. Nadie dice que te hayas enriquecido con sobrecostes",
+							"Sí, claro. Siempre hipotéticamente. Nadie dice que te hayas enriquecido con sobrecostes",
 							{
 							  "linkPath": "noSabesCuanto",
-							  "option": "Pues un paston",
+							  "option": "Pues un pastón",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "noSabesCuanto",
-							  "option": "Mas de lo que puedo gastar",
+							  "option": "Más de lo que puedo gastar",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}

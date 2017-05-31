@@ -1,13 +1,13 @@
-{
+ï»¿{
   "data": {
     "stitches": {
 
 			"initial": {
 					"content": [
-							"Chst, chst... Eh tu...",
+							"Chst, chst... Eh tÃº...",
 							{
 							  "linkPath": "claroQueTe",
-							  "option": "¿Eh?¿Me dices a mi?",
+							  "option": "Â¿Eh?Â¿Me dices a mi?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -33,16 +33,16 @@
 			},
 			"claroQueTe": {
 					"content": [
-							"Claro que te digo a ti ¿Contraseña?",
+							"Claro que te digo a ti. Â¿ContraseÃ±a?",
 							{
 							  "linkPath": "vayaCreoQue",
-							  "option": "¿Contraseña?",
+							  "option": "Â¿ContraseÃ±a?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "vayaCreoQue",
-							  "option": "Cafe con leche in piazza del duomo",
+							  "option": "CafÃ© con leche in piazza del duomo",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -68,16 +68,16 @@
 			},
 			"uffYaPensaba": {
 					"content": [
-							"Uff ya pensaba que eras poli. ¿Quieres un poco de opio?",
+							"Uff ya pensaba que eras poli. Â¿Quieres un poco de opio?",
 							{
 							  "linkPath": "loPagaMiguel",
-							  "option": "Claro hombre. Para la imaginacion",
+							  "option": "Claro hombre. Para la imaginaciÃ³n",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "buenoMiraMejor",
-							  "option": "Mi mama ya me advirtio de esto",
+							  "option": "Mi mamÃ¡ ya me advirtiÃ³ de esto",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -88,7 +88,7 @@
 							"Bueno, mira, mejor lo dejamos...",
 							{
 							  "linkPath": "initial",
-							  "option": "¡Drogainomano!",
+							  "option": "Â¡DrogainÃ³mano!",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -97,10 +97,10 @@
 			},
 			"loPagaMiguel": {
 					"content": [
-							"Lo paga Miguel Angel, ¿Verdad?",
+							"Lo paga Miguel Angel, Â¿Verdad?",
 							{
 							  "linkPath": "aquiTienesTomalo",
-							  "option": "Eh... ¡Pues claro!",
+							  "option": "Eh... Â¡Pues claro!",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -108,7 +108,7 @@
 			},
 			"aquiTienesTomalo": {
 					"content": [
-							"Aqui tienes. Tomalo con prudencia",
+							"AquÃ­ tienes. TÃ³malo con prudencia",
 							{
 							  "linkPath": "initial",
 							  "option": "A tu salud hombre",

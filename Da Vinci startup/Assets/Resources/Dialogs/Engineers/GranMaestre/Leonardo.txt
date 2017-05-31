@@ -1,24 +1,24 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola Leonardo, �En que puedo ayudarte?",
+							"Hola Leonardo, ¿En qué puedo ayudarte?",
 							{
 							  "linkPath": "hablaLeonardoNo",
-							  "option": "Vera maestro, queria pedirle una cosa...",
+							  "option": "Verá maestro, quería pedirle una cosa...",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "noTengoTiempo",
-							  "option": "�Me compra un boleto para una excursion del instituto?",
+							  "option": "¿Me compra un boleto para una excursión del instituto?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "initial",
-							  "option": "Bueno mejor dejelo...",
+							  "option": "Bueno mejor déjelo...",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -30,7 +30,7 @@
 							"Habla Leonardo, no tengas miedo",
 							{
 							  "linkPath": "loSeLeonardo",
-							  "option": "Gran maestre llevo muchos a�os como aprendiz...",
+							  "option": "Gran maestre llevo muchos años como aprendiz...",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -44,7 +44,7 @@
 			},
 			"noTengoTiempo": {
 					"content": [
-							"No tengo tiempo para tus tonterias. Si no vas a decir nada sensato mejor vete",
+							"No tengo tiempo para tus tonterías. Si no vas a decir nada sensato mejor vete",
 							{
 							  "linkPath": "...",
 							  "option": "Perdone. Era solo una broma para romper el hielo",
@@ -58,7 +58,7 @@
 							"...",
 							{
 							  "linkPath": "loSeLeonardo",
-							  "option": "Gran maestre llevo muchos a�os como aprendiz...",
+							  "option": "Gran maestre llevo muchos años como aprendiz...",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -66,7 +66,7 @@
 			},
 			"loSeLeonardo": {
 					"content": [
-							"Lo se Leonardo, eres el mejor de nuestros alumnos. El mas brillante",
+							"Lo se Leonardo, eres el mejor de nuestros alumnos. El más brillante",
 							{
 							  "linkPath": "hmm...",
 							  "option": "Es hora de que me convierta en maestro",
@@ -75,13 +75,13 @@
 							},
 							{
 							  "linkPath": "dejateDeBromas",
-							  "option": "Es que me lavo mucho se�or",
+							  "option": "Es que me lavo mucho señor",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "dejateDeBromas",
-							  "option": "Mucho mas que usted",
+							  "option": "Mucho más que usted",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -89,7 +89,7 @@
 			},
 			"dejateDeBromas": {
 					"content": [
-							"Dejate de bromas, �Que quieres?",
+							"Déjate de bromas, ¿Qué quieres?",
 							{
 							  "linkPath": "hmm...",
 							  "option": "Es hora de que me convierta en maestro",
@@ -109,7 +109,7 @@
 							},
 							{
 							  "linkPath": "eresMuyJoven",
-							  "option": "�Le pasa algo?",
+							  "option": "¿Le pasa algo?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -120,7 +120,7 @@
 							"Eres muy joven Leonardo",
 							{
 							  "linkPath": "noSe...",
-							  "option": "Soy el mas grande ingeniero de esta ciudad",
+							  "option": "Soy el más grande ingeniero de esta ciudad",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -134,7 +134,7 @@
 			},
 			"dejateDeTonterias": {
 					"content": [
-							"Dejate de tonterias Leonardo",
+							"Déjate de tonterías Leonardo",
 							{
 							  "linkPath": "deAcuerdoPero",
 							  "option": "Gran maestre no quiero ser un aprendiz",
@@ -148,7 +148,7 @@
 							"No se...",
 							{
 							  "linkPath": "dejateDeTonterias",
-							  "option": "�Me estas llamando enano?",
+							  "option": "¿Me estás llamando enano?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -156,10 +156,10 @@
 			},
 			"deAcuerdoPero": {
 					"content": [
-							"De acuerdo, pero tendras que pasar una ultima prueba",
+							"De acuerdo, pero tendrás que pasar una última prueba",
 							{
 							  "linkPath": "tendrasQueCrear",
-							  "option": "De acuerdo. �Que es?",
+							  "option": "De acuerdo. ¿Qué es?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -173,10 +173,10 @@
 			},
 			"quieresQueTe": {
 					"content": [
-							"�Quieres que te mande a fregar el Ponte Vecchio? �O te explico la prueba?",
+							"¿Quieres que te mande a fregar el Ponte Vecchio? ¿O te explico la prueba?",
 							{
 							  "linkPath": "tendrasQueCrear",
-							  "option": "De acuerdo. �Que es?",
+							  "option": "De acuerdo. ¿Qué es?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -184,7 +184,7 @@
 			},
 			"tendrasQueCrear": {
 					"content": [
-							"Tendras que crear una stratup y convertirla en una empresa",
+							"Tendrás que crear una stratup y convertirla en una empresa",
 							{
 							  "linkPath": "noTienesNi",
 							  "option": "Ah claro, una startup",
@@ -192,8 +192,8 @@
 							  "notIfConditions": false
 							},
 							{
-							  "linkPath": "",
-							  "option": "�Una startup?",
+							  "linkPath": "noTienesNi",
+							  "option": "¿Una startup?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -201,7 +201,7 @@
 			},
 			"noTienesNi": {
 					"content": [
-							"No tienes ni idea, �Verdad?",
+							"No tienes ni idea, ¿Verdad?",
 							{
 							  "linkPath": "unaStartupEs",
 							  "option": "En efecto, pero no",
@@ -212,10 +212,10 @@
 			},
 			"unaStartupEs": {
 					"content": [
-							"Una startup es una peque�a empresa cuyo objetivo es el crecimiento",
+							"Una startup es una pequeña empresa cuyo objetivo es el crecimiento",
 							{
 							  "linkPath": "noPensarEn",
-							  "option": "Vale ya lo pillo. Es como una empresa pero en peque�o",
+							  "option": "Vale ya lo pillo. Es como una empresa pero en pequeño",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -223,10 +223,10 @@
 			},
 			"noPensarEn": {
 					"content": [
-							"No, pensar en eso es un error comun. Una startup busca un modelo de negocio rentable y escalable. El problema es que aun no lo tiene. La funcion de la startup es encontrar ese modelo de negocio",
+							"No, pensar en eso es un error común. Una startup busca un modelo de negocio rentable y escalable. El problema es que aun no lo tiene. La función de la startup es encontrar ese modelo de negocio",
 							{
 							  "linkPath": "exactoUnaStartup",
-							  "option": "�Para asi consolidarse como una empresa?",
+							  "option": "¿Para así consolidarse como una empresa?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -243,7 +243,7 @@
 							},
 							{
 							  "linkPath": "unaStartupEs",
-							  "option": "�Puedes explicarmelo otra vez?",
+							  "option": "¿Puedes explicarmelo otra vez?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -251,10 +251,34 @@
 			},
 			"veLeonardoCompleta": {
 					"content": [
-							"Ve, Leonardo. Completa este  reto y seras un Gran maeste. Pero no sera facil: el camino del emprendedor esta lleno de dificultades",
+							"Ve, Leonardo. Completa este reto y serás un Gran maeste. Pero no sera fácil: el camino del emprendedor esta lleno de dificultades",
 							{
-							  "linkPath": "initial",
+							  "linkPath": "objective002",
 							  "option": "De acuerdo Gran maestre",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "objective": "objective002",
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"objective002": {
+					"content": [
+							"Hola, ¿Como va la construccion de la startup?",
+							{
+							  "linkPath": "meAlegroContinua",
+							  "option": "Bien, maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"meAlegroContinua": {
+					"content": [
+							"Me alegro. Continua trabajando",
+							{
+							  "linkPath": "objective002",
+							  "option": "Gracias maestro",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

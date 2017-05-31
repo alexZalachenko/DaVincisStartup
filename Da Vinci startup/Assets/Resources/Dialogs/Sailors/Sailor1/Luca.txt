@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"�Luca, que alegria! Hacia mucho tiempo que no te pasabas por aqui",
+							"¡Luca, que alegría! Hacía mucho tiempo que no te pasabas por aquí",
 							{
 							  "linkPath": "trabajandoConLeonardo",
 							  "option": "Hola, hola",
@@ -20,10 +20,10 @@
 			},
 			"trabajandoConLeonardo": {
 					"content": [
-							"�Trabajando con Leonardo en algun nuevo invento?",
+							"¿Trabajando con Leonardo en algún nuevo invento?",
 							{
 							  "linkPath": "buenoNoQuiero",
-							  "option": "Si. Algo por el estilo",
+							  "option": "Sí. Algo por el estilo",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}

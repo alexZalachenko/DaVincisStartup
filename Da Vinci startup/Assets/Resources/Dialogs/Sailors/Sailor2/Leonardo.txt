@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"No puedes estar aqui. Solo marineros y capitanes. Y bueno, ese tipo llamado Luca",
+							"No puedes estar aquí. Solo marineros y capitanes. Y bueno, ese tipo llamado Luca",
 							{
 							  "linkPath": "initial",
 							  "option": "Vale, disculpa",

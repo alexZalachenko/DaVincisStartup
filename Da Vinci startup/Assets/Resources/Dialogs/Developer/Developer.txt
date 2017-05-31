@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
       "initial": {
         "content": [
-          "Hola, soy Alex, el desarrollador del juego",
+          "Hola, soy Álex, el desarrollador del juego",
           {
             "linkPath": "meAlegroDe",
             "option": "Ah pues encantado",
@@ -20,7 +20,7 @@
       },
 	  "meEstasInsultando": {
         "content": [
-          "�Me estas insultando?",
+          "¿Me estás insultando?",
           {
             "linkPath": "buenoNoPasa",
             "option": "Perdona hombre, solo bromeaba",
@@ -29,7 +29,7 @@
           },
 		  {
             "linkPath": "cuandoSeInvente",
-            "option": "Si, ya sabes, un comedoritos, un cerebrito, un cuatro ojos...",
+            "option": "Sí, ya sabes, un comedoritos, un cerebrito, un cuatro ojos...",
             "ifConditions": false,
             "notIfConditions": false,
 			"achievement": "achievement001"
@@ -38,17 +38,17 @@
       },
 	  "meAlegroDe": {
         "content": [
-          "Me alegro de que hayas descargado el juego. �Te esta gustando?",
+          "Me alegro de que hayas descargado el juego. ¿Te está gustando?",
           {
             "linkPath": "guayMuchasGracias",
-            "option": "�Si, es un pasote! �Sigue asi!",
+            "option": "¡Sí, es un pasote! ¡Sigue así!",
             "ifConditions": false,
             "notIfConditions": false,
 			"achievement": "achievement003"
           },
 		  {
             "linkPath": "vayaEsUna",
-            "option": "No. Me esta provocando un cancer de cornea...",
+            "option": "No. Me está provocando un cáncer de córnea...",
             "ifConditions": false,
             "notIfConditions": false
           }
@@ -56,7 +56,7 @@
       },
 	  "buenoNoPasa": {
         "content": [
-          "Bueno, no pasa nada. Pero tenes menos gracia que pillar la sifilis",
+          "Bueno, no pasa nada. Pero tenes menos gracia que pillar la sífilis",
           {
             "linkPath": "meAlegroDe",
             "option": "..."
@@ -76,7 +76,7 @@
       },
 	  "guayMuchasGracias": {
         "content": [
-          "�Guay! �Muchas gracias! �Me echas una mano para que mas gente lo disfrute?",
+          "¡Guay! ¡Muchas gracias! ¿Me echas una mano para que más gente lo disfrute?",
           {
             "linkPath": "enElMenu",
             "option": "Por supuesto",
@@ -93,7 +93,7 @@
       },
 	  "enElMenu": {
         "content": [
-          "En el menu principal tienes un boton para ir a Google Play y puntuar el juego. Si le pones 5 estrellas seria la ca�a",
+          "En el menu principal tienes un boton para ir a Google Play y puntuar el juego. Si le pones 5 estrellas seria la caña",
           {
             "linkPath": "graciasPorVenir",
             "option": "De acuerdo, lo hare",
@@ -110,7 +110,7 @@
       },
 	  "vayaEsUna": {
         "content": [
-          "Vaya, es una pena. �Quieres ayudarme a mejorarlo?",
+          "Vaya, es una pena. ¿Quieres ayudarme a mejorarlo?",
           {
             "linkPath": "puedesMandarmeTus",
             "option": "Vale, te ayudo encantado",
@@ -127,10 +127,10 @@
       },
 	  "puedesMandarmeTus": {
         "content": [
-          "Puedes mandarme tus comentarios al perfil de LinkedIn que aparece en el menu de inicio. �Puedes estar seguro de que me los tomare muy en serio!",
+          "Puedes mandarme tus comentarios al perfil de LinkedIn que aparece en el menu de inicio. ¡Puedes estar seguro de que me los tomare muy en serio!",
 		  {
             "linkPath": "graciasPorVenir",
-            "option": "De acuerdo, lo hare",
+            "option": "De acuerdo, lo haré",
             "ifConditions": false,
             "notIfConditions": false
           }

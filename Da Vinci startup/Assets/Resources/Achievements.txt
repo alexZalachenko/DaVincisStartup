@@ -1,9 +1,9 @@
-{
+﻿{
 	"achievements" :
 		[
 			{
 				"ID" : "achievement001",
-				"text" : "La ira de los bits caera sobre ti",
+				"text" : "La ira de los bits caerá sobre ti",
 				"imageSource" : "Images/UI/achievement1"
 			},
 			{
@@ -13,17 +13,17 @@
 			},
 			{
 				"ID" : "achievement003",
-				"text" : "Has conquistado el corazon de un developer",
+				"text" : "Has conquistado el corazón de un developer",
 				"imageSource" : "Images/UI/achievement3"
 			},
 			{
 				"ID" : "achievement004",
-				"text" : "Este es el texto del logro 4",
+				"text" : "Has completado el primer objetivo",
 				"imageSource" : "Images/UI/achievement4"
 			},
 			{
 				"ID" : "achievement005",
-				"text" : "Este es el texto del logro 5",
+				"text" : "Has completado el juego",
 				"imageSource" : "Images/UI/achievement5"
 			}
 		]

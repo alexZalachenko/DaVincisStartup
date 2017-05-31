@@ -1,18 +1,18 @@
-{
+ï»¿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Ja, ja, ja. ¿De donde te has escapado grumete?",
+							"Ja, ja, ja. Â¿De donde te has escapado grumete?",
 							{
 							  "linkPath": "vuelveATu",
-							  "option": "Hola. ¿Que tal?",
+							  "option": "Hola. Â¿QuÃ© tal?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "vuelveATu",
-							  "option": "¿De verdad eres capitan?",
+							  "option": "Â¿De verdad eres capitÃ¡n?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -20,7 +20,7 @@
 			},
 			"vuelveATu": {
 					"content": [
-							"Vuelve a tu ratonera pequeño",
+							"Vuelve a tu ratonera pequeÃ±o",
 							{
 							  "linkPath": "initial",
 							  "option": "...",

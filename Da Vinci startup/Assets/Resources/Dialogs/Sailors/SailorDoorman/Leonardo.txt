@@ -1,4 +1,4 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
@@ -6,7 +6,7 @@
 							"Maestro Leonardo! Es un placer verte por este tugurio que es el puerto",
 							{
 							  "linkPath": "claroQueSi",
-							  "option": "No, maestro todavia no. Pero pronto podras llamarmelo",
+							  "option": "No, maestro todavía no. Pero pronto podrás llámarmelo",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -20,10 +20,10 @@
 			},
 			"claroQueSi": {
 					"content": [
-							"Claro que si Leonardo. Bueno, �Que te trae por esta cloaca?",
+							"Claro que sí Leonardo. Bueno, ¿Qué te trae por esta cloaca?",
 							{
 							  "linkPath": "loSientoSegun",
-							  "option": "Quiero dar una vuelta por el pueblo. �Puedo pasar?",
+							  "option": "Quiero dar una vuelta por el puerto. ¿Puedo pasar?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -40,7 +40,7 @@
 							"Ah pues ni idea de eso",
 							{
 							  "linkPath": "aquiNoSe",
-							  "option": "Me preguntaba si tendrias algo para mi...",
+							  "option": "Me preguntaba si tendrías algo para mi...",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -54,10 +54,10 @@
 			},
 			"aquiNoSe": {
 					"content": [
-							"Aqui no se hacen trapicheos raros asi que olvidate de eso. �Quieres algo mas?",
+							"Aquí no se hacen trapicheos raros así que olvídate de eso. ¿Quieres algo más?",
 							{
 							  "linkPath": "initial",
-							  "option": "No, dejalo",
+							  "option": "No, déjalo",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -69,13 +69,13 @@
 							"Lo siento, segun la normativa ISO 830 no puedes pasar si no llevas los elementos de seguridad necesarios",
 							{
 							  "linkPath": "tienesQueIrte",
-							  "�option": "Pero si tu no llevas nada!",
+							  "�option": "Pero si tu no llevas nada!",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "tienesQueIrte",
-							  "option": "�Volvere!�Y con casco!",
+							  "option": "¡Volveré! ¡Y con casco!",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}

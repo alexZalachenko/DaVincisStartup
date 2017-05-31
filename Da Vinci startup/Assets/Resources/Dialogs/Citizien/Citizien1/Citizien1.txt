@@ -1,25 +1,25 @@
-{
+﻿{
   "data": {
     "stitches": {
 
 			"initial": {
 					"content": [
-							"Hola, �Que tal?",
+							"Hola, ¿Qué tal?",
 							{
 							  "linkPath": "buenoNoMe",
-							  "option": "Hola. Bien �Y tu?",
+							  "option": "Hola. Bien ¿Y tú?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "vayaEsoDe",
-							  "option": "Borracho como un irlandes",
+							  "option": "Borracho como un irlandés",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "menudoEstupidoEres",
-							  "option": "�A ti que te importa?",
+							  "option": "¿A ti que te importa?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -61,10 +61,10 @@
 			},
 			"menudoEstupidoEres": {
 					"content": [
-							"Menudo estupido eres",
+							"Menudo estúpido eres",
 							{
 							  "linkPath": "initial",
-							  "option": "Pierdete",
+							  "option": "Piérdete",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -85,10 +85,10 @@
 			},
 			"puesSiBueno": {
 					"content": [
-							"Pues si. Bueno tengo que irme",
+							"Pues sí. Bueno tengo que irme",
 							{
 							  "linkPath": "initial",
-							  "option": "Que tengas un buen dia",
+							  "option": "Que tengas un buen día",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -97,16 +97,16 @@
 			},
 			"cuidadoConLo": {
 					"content": [
-							"Cuidado con lo que dices. Podrian arrestarte por traicion",
+							"Cuidado con lo que dices. Podrían arrestarte por traición",
 							{
 							  "linkPath": "creoQueNo",
-							  "option": "�Crees que un genio no tiene armas?",
+							  "option": "¿Crees que un genio no tiene armas?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "creoQueNo",
-							  "option": "Nadie se atrevera a tocarme",
+							  "option": "Nadie se atreverá a tocarme",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -114,7 +114,7 @@
 			},
 			"creoQueNo": {
 					"content": [
-							"Creo que no deberiamos seguir hablando",
+							"Creo que no deberíamos seguir hablando",
 							{
 							  "linkPath": "initial",
 							  "option": "Adios, cobarde",

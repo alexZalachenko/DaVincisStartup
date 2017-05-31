@@ -22,6 +22,8 @@ public class MovementManager : MonoBehaviour {
     [SerializeField]
     LayerMask c_raycastMask;
     private Camera c_camera;
+
+    private AnimationManager c_animationManager;
     #endregion
 
     void Start ()
@@ -35,6 +37,8 @@ public class MovementManager : MonoBehaviour {
         c_movementRight = Vector3.right * c_movementSpeed;
         c_movementLeft = Vector3.left * c_movementSpeed;
         c_camera = transform.GetChild(0).GetComponent<Camera>();
+
+        c_animationManager = transform.GetComponent<AnimationManager>();
         UpdateBounds();
     }
 
@@ -47,16 +51,18 @@ public class MovementManager : MonoBehaviour {
                 //raycast to see if an interactable entity has been clicked
                 Vector3 t_origin = c_camera.ScreenToWorldPoint(
                     new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, c_cameraToPlayerDistance));
+                c_animationManager.OnMovement(t_origin.x);
                 t_origin.z -= 1;
                 RaycastHit t_hitInfo;
+                //touched on an interactable entity
                 if (Physics.Raycast(t_origin, Vector3.forward, out t_hitInfo, 2, c_raycastMask))
                 {
                     Vector3 t_hitPosition = t_hitInfo.transform.position;
-                    //if the player is close enought don't do anything
+                    //if the player is far enought from the touch position move him
                     if (Mathf.Abs(t_hitPosition.x - transform.position.x) > c_dontGetCloserToInteractableThan)
                     {
                         //the player is at the left of the raycasted entity
-                        if (t_hitPosition.x < transform.position.x) 
+                        if (t_hitPosition.x < transform.position.x)
                             c_movementObjectivePosition = t_hitPosition.x + c_dontGetCloserToInteractableThan;
                         //the player is at the right of the raycasted entity
                         else

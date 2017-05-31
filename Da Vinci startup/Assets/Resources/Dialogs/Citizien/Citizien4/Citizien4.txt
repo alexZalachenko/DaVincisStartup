@@ -1,26 +1,26 @@
-{
+﻿{
   "data": {
     "stitches": {
 
 				"initial": {
 						"content": [
-								"Hola joven, �Tienes un minuto?",
+								"Hola joven, ¿Tienes un minuto?",
 								{
 								  "linkPath": "miraEsQue",
-								  "option": "Si claro. �Que pasa?",
+								  "option": "Sí claro. ¿Qué pasa?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								},
 								{
 								  "linkPath": "miraEsQue",
-								  "option": "�Vas vestido con una cortina?",
+								  "option": "¿Vas vestido con una cortina?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
 								,
 								{
 								  "linkPath": "peroPorFavor",
-								  "option": "Dejame, estoy ocupado",
+								  "option": "Déjame, estoy ocupado",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -28,7 +28,7 @@
 				},
 				"miraEsQue": {
 						"content": [
-								"Mira es que voy a Roma pero he perdido el billete del carruaje y no tengo mas dinero...",
+								"Mira es que voy a Roma pero he perdido el billete del carruaje y no tengo más dinero...",
 								{
 								  "linkPath": "soyAyudanteDel",
 								  "option": "A Roma...",
@@ -48,7 +48,7 @@
 								},
 								{
 								  "linkPath": "teJuroQue",
-								  "option": "No suena muy creible...",
+								  "option": "No suena muy creíble...",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -59,7 +59,7 @@
 								"Te juro que es verdad. Soy el cardenal de Edimburgo",
 								{
 								  "linkPath": "peroPorFavor",
-								  "option": "�Pero no eras ayudante del Papa?",
+								  "option": "¿Pero no eras ayudante del Papa?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -70,7 +70,7 @@
 								"Pero por favor...",
 								{
 								  "linkPath": "initial",
-								  "option": "�Que te largues!",
+								  "option": "¡Qué te largues!",
 								  "ifConditions": false,
 								  "notIfConditions": false,
 								  "flagName": "exit"
@@ -82,7 +82,7 @@
 								"Pringado...",
 								{
 								  "linkPath": "initial",
-								  "option": "�Eh?",
+								  "option": "¿Eh?",
 								  "ifConditions": false,
 								  "notIfConditions": false,
 								  "flagName": "exit"

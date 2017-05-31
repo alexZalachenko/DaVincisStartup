@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola Leo. �Tienes un momento? Quiero hablarte sobre un tema importante...",
+							"Hola Leo. ¿Tienes un momento? Quiero hablarte sobre un tema importante...",
 							{
 							  "linkPath": "heTenidoUna",
-							  "option": "Si, claro. Cuentame",
+							  "option": "Sí, claro. Cuéntame",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -20,7 +20,7 @@
 			},
 			"heTenidoUna": {
 					"content": [
-							"He tenido una idea fantastica para un invento. �Te apetece escucharla?",
+							"He tenido una idea fantástica para un invento. ¿Te apetece escucharla?",
 							{
 							  "linkPath": "seMeOcurre",
 							  "option": "Por supuesto",
@@ -49,10 +49,10 @@
 			},
 			"seMeOcurre": {
 					"content": [
-							"Se me ocurre que podria hacer un servicio en el que poner en contacto a carruajes que van a un sitio y gente que quiere ir ahi",
+							"Se me ocurre que podria hacer un servicio en el que poner en contacto a carruajes que van a un sitio y gente que quiere ir allí",
 							{
 							  "linkPath": "asiPuedenCompartir",
-							  "option": "�Y eso para que?",
+							  "option": "¿Y eso para qué?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -60,10 +60,10 @@
 			},
 			"asiPuedenCompartir": {
 					"content": [
-							"Asi pueden compartir gastos de transporte y les sale mas barato",
+							"Así pueden compartir gastos de transporte y les sale mas barato",
 							{
 							  "linkPath": "noTeParece",
-							  "option": "Es una idiotez. Olvidalo",
+							  "option": "Es una idiotez. Olvídalo",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -71,16 +71,16 @@
 			},
 			"noTeParece": {
 					"content": [
-							"�No te parece buena idea?",
+							"¿No te parece buena idea?",
 							{
 							  "linkPath": "vayaPuesYo",
-							  "option": "Me parece la peor idea que has tenido jamas",
+							  "option": "Me parece la peor idea que has tenido jamás",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
 							{
 							  "linkPath": "vayaPuesYo",
-							  "option": "Es una idea malisima",
+							  "option": "Es una idea malísima",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}

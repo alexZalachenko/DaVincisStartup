@@ -1,11 +1,11 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"�Aloha! He, he, he. �Te he contado como viaje a las estrellas con mi barco?",
+							"¡Aloha! He, he, he. ¿Te he contado como viaje a las estrellas con mi barco?",
 							{
-							  "linkPath": "corriaElA�o",
+							  "linkPath": "corriaElAño",
 							  "option": "Eh... pues no",
 							  "ifConditions": false,
 							  "notIfConditions": false
@@ -18,9 +18,9 @@
 							}
 			        ]
 			},
-			"corriaElA�o": {
+			"corriaElAño": {
 					"content": [
-							"Corria el a�o 1517 y yo estaba ligeramente enganchado al opio",
+							"Corria el año 1517 y yo estaba ligeramente enganchado al opio",
 							{
 							  "linkPath": "cogiMiBarco",
 							  "option": "Aham...",
@@ -40,7 +40,7 @@
 					"content": [
 							"Calla y escucha. Maleducado",
 							{
-							  "linkPath": "corriaElA�o",
+							  "linkPath": "corriaElAño",
 							  "option": "...",
 							  "ifConditions": false,
 							  "notIfConditions": false
@@ -56,10 +56,10 @@
 			},
 			"cogiMiBarco": {
 					"content": [
-							"Cogi mi barco, 15 valientesmarineros y provisiones de agua, comida y opio. Y... ya no me acuerdo de mas",
+							"Cogí mi barco, 15 valientes marineros y provisiones de agua, comida y opio. Y... ya no me acuerdo de más",
 							{
 							  "linkPath": "initial",
-							  "option": "Vaya. Prometia interesante",
+							  "option": "Vaya. Prometía interesante",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

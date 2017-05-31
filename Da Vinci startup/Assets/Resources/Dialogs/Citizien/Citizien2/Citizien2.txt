@@ -1,10 +1,10 @@
-{
+﻿{
   "data": {
     "stitches": {
 
 				"initial": {
 						"content": [
-								"�Que te paza illo?",
+								"¿Qué te paza illo?",
 								{
 								  "linkPath": "oleTuMi",
 								  "option": "Hola caballero",
@@ -21,10 +21,10 @@
 				},
 				"oleTuMi": {
 						"content": [
-								"Ole tu mi arma",
+								"Olé tú mi arma",
 								{
 								  "linkPath": "florenciaTieneUn",
-								  "option": "Hace un bonito dia, �Verdad?",
+								  "option": "Hace un bonito día, ¿Verdad?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -32,10 +32,10 @@
 				},
 				"queVivaEl": {
 						"content": [
-								"�Que viva el zur de Italia!",
+								"¡Qué viva el zur de Italia!",
 								{
 								  "linkPath": "florenciaTieneUn",
-								  "option": "Hace un bonito dia, �Verdad?",
+								  "option": "Hace un bonito día, ¿Verdad?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -43,16 +43,16 @@
 				},
 				"florenciaTieneUn": {
 						"content": [
-								"Florencia tiene un colo especia",
+								"Florencia tiene un coló especiá",
 								{
 								  "linkPath": "posMiraMacabo",
-								  "option": "�Y que haces tu por aqui?",
+								  "option": "¿Y qué haces tú por aquí?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								},
 								{
 								  "linkPath": "hostiaTuMi",
-								  "option": "Sera por la boina de contaminacion",
+								  "option": "Será por la boina de contaminación",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -60,7 +60,7 @@
 				},
 				"posMiraMacabo": {
 						"content": [
-								"Pos mira macabo de levanta de la ziezta y me dixo: vamo a da un pazeo que me lo merehco",
+								"Pos mira macabo de levantá de la ziezta y me dixo: vamo a da un pazeo que me lo merehco",
 								{
 								  "linkPath": "buenoMeVoy",
 								  "option": "Ah muy bien",
@@ -69,7 +69,7 @@
 								},
 								{
 								  "linkPath": "vagoYoVivo",
-								  "option": "�No es usted un poco vago?",
+								  "option": "¿No es usted un poco vago?",
 								  "ifConditions": false,
 								  "notIfConditions": false
 								}
@@ -89,7 +89,7 @@
 				},
 				"vagoYoVivo": {
 						"content": [
-								"�Vago yo? Vivo la vida de forma relajada. Ale, me voy mas ofendio",
+								"¿Vago yo? Vivo la vida de forma relajada. Ale, me voy mas ofendío",
 								{
 								  "linkPath": "initial",
 								  "option": "Adios, adios",
@@ -101,7 +101,7 @@
 				},
 				"hostiaTuMi": {
 						"content": [
-								"Hostia tu, mi boina. Que me la dejao en el bar. �Me voy!",
+								"Hostia tú, mi boina. Que me la dejao en el bar. ¡Me voy!",
 								{
 								  "linkPath": "initial",
 								  "option": "Adios, adios",

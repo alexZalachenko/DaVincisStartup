@@ -1,10 +1,10 @@
-{
+﻿{
   "data": {
     "stitches": {
 
 			"initial": {
 					"content": [
-							"HolaLuca. Gracias otra vez por ayudar a curar el eskorbuto de los marineros. Eres un buen hombre",
+							"Hola Luca. Gracias otra vez por ayudar a curar el eskorbuto de los marineros. Eres un buen hombre",
 							{
 							  "linkPath": "quieresPasarAl",
 							  "option": "Cumplo con mi deber",
@@ -21,7 +21,7 @@
 			},
 			"quieresPasarAl": {
 					"content": [
-							"�Quieres pasar al puerto? Entra, entra. Estaran encantados de verte",
+							"¿Quieres pasar al puerto? Entra, entra. Estarán encantados de verte",
 							{
 							  "linkPath": "initial",
 							  "option": "Gracias. Hasta luego",

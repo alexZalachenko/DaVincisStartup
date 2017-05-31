@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Vaya, vaya peque�o. �Pero tu sabes nadar?",
+							"Vaya, vaya pequeño. ¿Pero tú sabes nadar?",
 							{
 							  "linkPath": "talVezUn",
 							  "option": "Pues claro",
@@ -20,7 +20,7 @@
 			},
 			"loQueYo": {
 					"content": [
-							"Lo que yo decia. Este no es tu sitio. Largate",
+							"Lo que yo decía. Este no es tu sitio. Lárgate",
 							{
 							  "linkPath": "initial",
 							  "option": "Bueno, adios",
@@ -32,10 +32,10 @@
 			},
 			"talVezUn": {
 					"content": [
-							"Lo que yo decia. Este no es tu sitio. Largate",
+							"Lo que yo decía. Este no es tu sitio. Lárgate",
 							{
 							  "linkPath": "initial",
-							  "option": "Mira alli, un mono de 3 cabezas",
+							  "option": "Mira allí, un mono de 3 cabezas",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

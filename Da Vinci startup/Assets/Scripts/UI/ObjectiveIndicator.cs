@@ -44,6 +44,12 @@ public class ObjectiveIndicator : MonoBehaviour {
         LoadObjectives();
     }
 
+    private void Start()
+    {
+        //set the first objective
+        UnlockObjective("objective001");
+    }
+
     public void OnIconClic()
     {
         c_scrollView.SetActive(!c_scrollView.activeSelf);
@@ -65,7 +71,7 @@ public class ObjectiveIndicator : MonoBehaviour {
                 t_objectiveText = c_objectives[t_index].c_text;
         }
         c_newObjective = true;
-        c_objectiveText.text += t_objectiveText + "\n";
+        c_objectiveText.text = t_objectiveText + "\n";
         StartCoroutine(NotifyNewObjective());
         return t_objectiveText;
     }
@@ -83,7 +89,7 @@ public class ObjectiveIndicator : MonoBehaviour {
     private void LoadObjectives()
     {
         c_objectives = new List<Objective>();
-        JSONNode c_parsed = JSONNode.Parse(Resources.Load(c_objectivesFile).ToString())["achievements"];
+        JSONNode c_parsed = JSONNode.Parse(Resources.Load(c_objectivesFile).ToString())["objectives"];
         for (int t_objective = 0; t_objective < c_parsed.Count; t_objective++)
             c_objectives.Add(new Objective(c_parsed[t_objective]["ID"], c_parsed[t_objective]["text"]));
     }

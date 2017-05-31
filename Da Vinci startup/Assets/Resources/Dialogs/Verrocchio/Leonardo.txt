@@ -1,0 +1,247 @@
+﻿{
+  "data": {
+    "stitches": {
+			"initial": {
+					"content": [
+							"Hola Leonardo. ¿Has ido ya a hablar con el gran maestre?",
+							{
+							  "linkPath": "veNoTengas",
+							  "option": "No, todavía no",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"veNoTengas": {
+					"content": [
+							"Ve. No tengas miedo. Hazle tu propuesta",
+							{
+							  "linkPath": "initial",
+							  "option": "Gracias maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"objective002": {
+					"content": [
+							"Hola Leonardo ¿Cómo ha ido tu charla con el Gran maestre?",
+							{
+							  "linkPath": "cuentameDeQue",
+							  "option": "Bien maestro. Tengo que superar una prueba",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"cuentameDeQue": {
+					"content": [
+							"Cuéntame. ¿De qué se trata?",
+							{
+							  "linkPath": "tengoQueCrear",
+							  "option": "Tengo que crear una startup y que tenga éxito",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"tengoQueCrear": {
+					"content": [
+							"Vaya, vaya. Pues has tenido suerte. Precisamente yo soy un experto en el mundo de las startups",
+							{
+							  "linkPath": "hePasadoUnos",
+							  "option": "¿Ah si? ¿Y dónde aprendió?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"hePasadoUnos": {
+					"content": [
+							"He pasado unos años en Toscana Valley y allí aprendí sobre una metodología empresarial llamada Lean startup",
+							{
+							  "linkPath": "claroQueSi",
+							  "option": "perfecto maestro. Espero que me ayude",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"claroQueSi": {
+					"content": [
+							"Claro que sí Leonardo. ¿Has empezado ya a reunir a tu equipo?",
+							{
+							  "linkPath": "claroQueNecesitas",
+							  "option": "¿Equipo?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "claroQueNecesitas",
+							  "option": "No necesito un equipo. Estoy hecho un toro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"claroQueNecesitas": {
+					"content": [
+							"Claro que necesitas un equipo. Necesitas rodearte de personas que tengan las habilidades que tú no tienes. Además, estar juntos os ayudará a apoyaros en los momentos más difíciles",
+							{
+							  "linkPath": "esUnError",
+							  "option": "Visto así tienes razón",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"esUnError": {
+					"content": [
+							"Es un error común pensar que puedes hacerlo todo tú solo. Pero no eres un experto en todas las materias necesarias, ni puedes hacer tanto trabajo",
+							{
+							  "linkPath": "buenaPreguntaDebes",
+							  "option": "¿Y de dónde saco yo un equipo?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"buenaPreguntaDebes": {
+					"content": [
+							"Buena pregunta. Debes hacer networking. Es decir, salir a la calle y conocer gente. Cuanta más gente que pueda ser útil para tu proyecto conozcas, mejor.",
+							{
+							  "linkPath": "noMejorEmpieza",
+							  "option": "De acuerdo. Empezaré a buscar en el bar",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"noMejorEmpieza": {
+					"content": [
+							"No. Mejor empieza por el puerto. Busca marineros que estén interesados en trabajar duro. Necesitarás alguien que construya tu producto",
+							{
+							  "linkPath": "comoVaLa",
+							  "option": "¡Gracias maestro!",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit",
+							  "objective": "objective003"
+							}
+			        ]
+			},
+			"comoVaLa": {
+					"content": [
+							"¿Cómo va la búsqueda en el puerto?",
+							{
+							  "linkPath": "comoVaLa",
+							  "option": "Aun no he terminado. Voy a ello",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			},
+			"objective004": {
+					"content": [
+							"Hola Leonardo ¿Cómo ha ido la búsqueda en el puerto?",
+							{
+							  "linkPath": "perfectoElSiguiente",
+							  "option": "Bien maestro. Hemos conseguido los constructores",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"perfectoElSiguiente": {
+					"content": [
+							"Perfecto. El siguiente paso es conseguir financiación. Hay dos formas de hacerlo: bootstrapping  y externa",
+							{
+							  "linkPath": "bootstrappingSignificaQue",
+							  "option": "¿Bootstrapping?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "externaSignificaConseguir",
+							  "option": "¿Externa?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"bootstrappingSignificaQue": {
+					"content": [
+							"Bootstrapping significa que emprenderás utilizando únicamente los recursos económicos que tienes. Sin que nadie te preste ayuda financiera",
+							{
+							  "linkPath": "externaSignificaConseguir",
+							  "option": "¿Y externa?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "elBootstrappingEsta",
+							  "option": "¿Cual debo elegir?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"externaSignificaConseguir": {
+					"content": [
+							"Externa significa conseguir que personas externas al proyecto presten dinero. Los burgueses del palacio por ejemplo",
+							{
+							  "linkPath": "bootstrappingSignificaQue",
+							  "option": "¿Y bootstrapping?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							},
+							{
+							  "linkPath": "elBootstrappingEsta",
+							  "option": "¿Cual debo elegir?",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"elBootstrappingEsta": {
+					"content": [
+							"El bootstrapping está bien porque te permite esr totalmente independiente. Pero limitará la manitud de tu proyecto al capital del que dispongas",
+							{
+							  "linkPath": "loSeEs",
+							  "option": "Voy a necesitar bastante capital maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false
+							}
+			        ]
+			},
+			"loSeEs": {
+					"content": [
+							"Lo se. Es por ello que deberías buscar financiación externa. Pregunta a los burgueses en el palacio",
+							{
+							  "linkPath": "",
+							  "option": "¡Voy a ello maestro!",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit",
+							  "objective": "objective005"
+							}
+			        ]
+			},
+			"": {
+					"content": [
+							"hasBuscadoYa",
+							{
+							  "linkPath": "¿Has buscado ya financiación?",
+							  "option": "Sigo en ello maestro",
+							  "ifConditions": false,
+							  "notIfConditions": false,
+							  "flagName": "exit"
+							}
+			        ]
+			}
+    },
+    "initial": "initial"
+  }
+}

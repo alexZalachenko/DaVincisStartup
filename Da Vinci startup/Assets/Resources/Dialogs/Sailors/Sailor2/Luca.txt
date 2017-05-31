@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hombre, Luca. Gracias por curarle el eskorbuto a mi hermano. No se que seria de el sin ti",
+							"Hombre, Luca. Gracias por curarle el eskorbuto a mi hermano. No se que sería de él sin ti",
 							{
 							  "linkPath": "claroQueSi",
 							  "option": "No me des las gracias",
@@ -20,7 +20,7 @@
 			},
 			"claroQueSi": {
 					"content": [
-							"Claro que si. Eres el hombre mas bueno de esta ciudad. �Puedo hacer algo por ti?",
+							"Claro que sí. Eres el hombre mas bueno de esta ciudad. ¿Puedo hacer algo por ti?",
 							{
 							  "linkPath": "valeLlevaCuidado",
 							  "option": "No. Solo paseaba",
@@ -31,7 +31,7 @@
 			},
 			"vayaNoPensaba": {
 					"content": [
-							"Vaya, no pensaba que fueras un ratero como esos medicos de la ciudad. Me das asco. Date el piro",
+							"Vaya, no pensaba que fueras un ratero como esos médicos de la ciudad. Me das asco. Date el piro",
 							{
 							  "linkPath": "initial",
 							  "option": "Bah, adios",

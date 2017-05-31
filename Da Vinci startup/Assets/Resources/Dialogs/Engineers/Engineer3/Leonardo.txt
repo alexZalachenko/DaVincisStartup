@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Buenos dias maestro. �Como va el dia?",
+							"Buenos días maestro. ¿Como va el día?",
 							{
 							  "linkPath": "puesBastanteMal",
-							  "option": "Muy bien. �Y tu?",
+							  "option": "Muy bien. ¿Y tú?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -20,10 +20,10 @@
 			},
 			"puesBastanteMal": {
 					"content": [
-							"Pues bastante mal. Para que te voy a enga�ar: no es mi mejor momento",
+							"Pues bastante mal. Para que te voy a engañar: no es mi mejor momento",
 							{
 							  "linkPath": "elTrabajoQue",
-							  "option": "�Que te atormenta?",
+							  "option": "¿Qué te atormenta?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}
@@ -31,10 +31,10 @@
 			},
 			"buenoYoTengo": {
 					"content": [
-							"Bueno, yo tengo peores problemas, asi que preguntame",
+							"Bueno, yo tengo peores problemas, así que pregúntame",
 							{
 							  "linkPath": "initial",
-							  "option": "Mira macho tu eres tonto. Adios",
+							  "option": "Mira macho tú eres tonto. Adios",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
@@ -43,7 +43,7 @@
 			},
 			"elTrabajoQue": {
 					"content": [
-							"El trabajo. Que esta la cosa muy mal en FLorencia. EStoy pensando en irma a los paises germanicos",
+							"El trabajo. Que esta la cosa muy mal en Florencia. EStoy pensando en irme a los países germánicos",
 							{
 							  "linkPath": "graciasPorEscucharme",
 							  "option": "Vaya que mal suena. Suerte",

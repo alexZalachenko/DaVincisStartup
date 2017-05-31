@@ -1,4 +1,4 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
@@ -6,7 +6,7 @@
 							"Hola Salai. Tengo un negocio para ti que es perfecto",
 							{
 							  "linkPath": "nuevaRomanaUna",
-							  "option": "Cuentame",
+							  "option": "Cuéntame",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -21,7 +21,7 @@
 			},
 			"nuevaRomanaUna": {
 					"content": [
-							"Nueva Romana, una empresa que esta expandiendose, busca peque�os inversores como nosotros. Garantizan una rentabilidad del 25%",
+							"Nueva Romana, una empresa que esta expandiéndose, busca pequeños inversores como nosotros. Garantizan una rentabilidad del 25%",
 							{
 							  "linkPath": "initial",
 							  "option": "Claro. Cuenta conmigo",
@@ -39,7 +39,7 @@
 			},
 			"buenoTuTe": {
 					"content": [
-							"Bueno, tu te lo pierdes. Mi cu�ado dice que se puede ganar mucho dinero con esto",
+							"Bueno, tú te lo pierdes. Mi cuñado dice que se puede ganar mucho dinero con esto",
 							{
 							  "linkPath": "initial",
 							  "option": "Adios",

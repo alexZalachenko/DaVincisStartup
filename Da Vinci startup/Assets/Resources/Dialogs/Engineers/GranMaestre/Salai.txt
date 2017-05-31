@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola joven. No deberias estar aqui. Solo los ingenieros pueden estar en la logia",
+							"Hola joven. No deberías estar aquí. Solo los ingenieros pueden estar en la logia",
 							{
 							  "linkPath": "tienesQueMarcharte",
-							  "option": "Hola. Solo queria echar un vistazo",
+							  "option": "Hola. Solo quería echar un vistazo",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},

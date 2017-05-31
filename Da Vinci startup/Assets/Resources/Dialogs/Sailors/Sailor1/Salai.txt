@@ -1,9 +1,9 @@
-{
+ï»¿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"¡Eh! ¿Quien te ha dejado pasar? Podrias hacerte daño. Desde que dejamos pasar a Luca se cuela todo tipo de pringados",
+							"Â¡Eh! Â¿Quien te ha dejado pasar? PodÃ­as hacerte daÃ±o. Desde que dejamos pasar a Luca se cuelan todo tipo de pringados",
 							{
 							  "linkPath": "initial",
 							  "option": "Perdon, ya me iba",

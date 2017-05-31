@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola. �Tu que opinas de los recortes que hace el gobierno para paliar la crisis economica?",
+							"Hola. ¿Tú que opinas de los recortes que hace el gobierno para paliar la crisis economica?",
 							{
 							  "linkPath": "esoMismoDigo",
-							  "option": "Demasiados derechos tenemos aun",
+							  "option": "Demasiados derechos tenemos aún",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -20,7 +20,7 @@
 			},
 			"esoMismoDigo": {
 					"content": [
-							"Eso mismo digo yo. Estoy prreparando una propuesta para reinstaurar la esclavitud",
+							"Eso mismo digo yo. Estoy preparando una propuesta para reinstaurar la esclavitud",
 							{
 							  "linkPath": "initial",
 							  "option": "Tienes mi voto",
@@ -32,7 +32,7 @@
 			},
 			"porSupuestoHe": {
 					"content": [
-							"Por supuesto. He oido que van a empezar a pagar en cuencos de arroz. Se preocupan hasta por nuestra dieta",
+							"Por supuesto. He oído que van a empezar a pagar en cuencos de arroz. Se preocupan hasta por nuestra dieta",
 							{
 							  "linkPath": "initial",
 							  "option": "Amo al gobierno",

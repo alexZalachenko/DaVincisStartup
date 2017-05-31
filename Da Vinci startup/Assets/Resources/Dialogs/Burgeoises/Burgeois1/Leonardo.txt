@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"�Pero que ropas son esas? En este palacio ya entra hasta la plebe",
+							"¿Pero que ropas son esas? En este palacio ya entra hasta la plebe",
 							{
 							  "linkPath": "tienesElGusto",
 							  "option": "Pues a mi me parecen bonitas",
@@ -12,7 +12,7 @@
 							},
 							{
 							  "linkPath": "tienesElGusto",
-							  "option": "Tu no entiendes de moda",
+							  "option": "Tú no entiendes de moda",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							}

@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"�Que tal Salai? �Has pensado en el trato que te dije?",
+							"¿Qué tal Salai? ¿Has pensado en el trato que te dije?",
 							{
 							  "linkPath": "hundimosLaEmpresa",
-							  "option": "Refrescame la memoria",
+							  "option": "Refréscame la memoria",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -38,7 +38,7 @@
 			},
 			"perfectoTeContactare": {
 					"content": [
-							"Perfecto. Te contactare pronto con los detalles",
+							"Perfecto. Te contactaré pronto con los detalles",
 							{
 							  "linkPath": "initial",
 							  "option": "Hasta entonces",

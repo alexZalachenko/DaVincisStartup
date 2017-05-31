@@ -9,7 +9,7 @@ public class Door : ClickableEntity, IPointerClickHandler
     GameObject c_nextScenario;
     [SerializeField]
     Transform c_nextSpawnpoint;
-
+    
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
     {
         if (!IsClickValid())

@@ -1,12 +1,12 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Oye lo siento pero no deberias de estar aqui...",
+							"Oye lo siento pero no deberias de estar aquí...",
 							{
 							  "linkPath": "soloLosIngenieros",
-							  "option": "�Por que?",
+							  "option": "¿Por qué?",
 							  "ifConditions": false,
 							  "notIfConditions": false
 							},
@@ -24,7 +24,7 @@
 							"Solo los ingenieros pueden entrar en la logia y hablar con otros ingenieros",
 							{
 							  "linkPath": "initial",
-							  "option": "Vaya, no lo sabia. Adios",
+							  "option": "Vaya, no lo sabía. Adios",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

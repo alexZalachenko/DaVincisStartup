@@ -1,9 +1,9 @@
-{
+﻿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"No puedo hablar contigo.Si el Gran maestre se entera me caera una buena...",
+							"No puedo hablar contigo. Si el Gran maestre se entera me caerá una buena...",
 							{
 							  "linkPath": "initial",
 							  "option": "Vale, no quiero meterte en problemas",

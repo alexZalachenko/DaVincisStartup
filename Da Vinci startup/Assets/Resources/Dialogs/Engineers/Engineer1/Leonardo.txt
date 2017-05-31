@@ -1,9 +1,9 @@
-{
+ï»¿{
   "data": {
     "stitches": {
 			"initial": {
 					"content": [
-							"Hola Leo. ¿Que tal todo?",
+							"Hola Leo. Â¿QuÃ© tal todo?",
 							{
 							  "linkPath": "andaYA",
 							  "option": "Pues venia a hablar con el Gran maestre",
@@ -38,7 +38,7 @@
 			},
 			"ohDiosDime": {
 					"content": [
-							"¡Oh Dios! ¡Dime que no hablabas en serio! ¡Aaaaaaaaargh!",
+							"Â¡Oh Dios! Â¡Dime que no hablabas en serio! Â¡Aaaaaaaaargh!",
 							{
 							  "linkPath": "arghNoLo",
 							  "option": "Tranquilo, tranquilo. Que es broma",
@@ -49,7 +49,7 @@
 			},
 			"arghNoLo": {
 					"content": [
-							"¡Aaaaaaaaargh! No lo hagas... Por favor...",
+							"Â¡Aaaaaaaaargh! No lo hagas... Por favor...",
 							{
 							  "linkPath": "initial",
 							  "option": "...",
@@ -61,7 +61,7 @@
 			},
 			"andaYA": {
 					"content": [
-							"Anda. ¿Y a que se debe?",
+							"Anda. Â¿Y a que se debe?",
 							{
 							  "linkPath": "ohLeonardoSe",
 							  "option": "Quiero ser Gran maestre",
@@ -78,10 +78,10 @@
 			},
 			"ohLeonardoSe": {
 					"content": [
-							"Oh Leonardo se que lo haras genial. Ve  a hablar con el Gran maestre",
+							"Oh Leonardo se que lo harÃ¡s genial. Ve a hablar con el Gran maestre",
 							{
 							  "linkPath": "initial",
-							  "option": "Gracias. Lo hare",
+							  "option": "Gracias. Lo harÃ©",
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"

@@ -54,6 +54,7 @@ public class JSONParser : MonoBehaviour
     [SerializeField]
     private ObjectiveIndicator c_objectiveIndicator;
     private AchievementsManager c_achievementsManager;
+    private string c_lastObjectiveUnlocked = "";
     #endregion
 
     public bool ConversationEnded
@@ -77,6 +78,19 @@ public class JSONParser : MonoBehaviour
         c_currentStitch = c_stitches["data"]["stitches"][t_fistNode];
         c_stitches = c_stitches["data"]["stitches"];
         c_conversationFile = p_file;
+
+        if (c_lastObjectiveUnlocked != "")
+        {
+            for (int t_index = 0; t_index < c_stitches.Count; t_index++)
+            {
+                if (c_stitches.Keys.ElementAt(t_index) == c_lastObjectiveUnlocked)
+                {
+                    c_currentStitch = c_stitches[t_index];
+                    return;
+                }
+            }
+        }
+        c_savedConversations.Add(new Conversation(c_conversationFile, c_currentStitch, c_stitches));
     }
 
     public string GetNodeText()
@@ -85,7 +99,7 @@ public class JSONParser : MonoBehaviour
 
         while (c_currentStitch["content"][1].Keys.Contains("divert")/* .ElementAt(0) == "divert"*/)
         {
-            c_currentStitch = c_stitches[c_currentStitch["content"][1]["divert"]];
+            c_currentStitch = c_stitches[c_currentStitch["content"][1]["divert"].AsInt];
             r_text += c_currentStitch["content"][0];
         }
         return r_text;
@@ -166,7 +180,7 @@ public class JSONParser : MonoBehaviour
                 if (!c_currentStitch["content"][t_index]["linkPath"].AsBool)
                     ConversationEnded = true;
                 else
-                    c_currentStitch = c_stitches[c_currentStitch["content"][t_index]["linkPath"]];
+                    c_currentStitch = c_stitches[c_currentStitch["content"][t_index]["linkPath"].Value];
                 break;
             }
         }
@@ -206,16 +220,17 @@ public class JSONParser : MonoBehaviour
 
     private void ObjectiveAchieved(string p_objective)
     {
-        string t_achievedObjective = c_objectiveIndicator.UnlockObjective(p_objective);
-        //check if there are any stitch with the same name as the unlocked objective. If so, set it as current stitch
+        c_lastObjectiveUnlocked = p_objective;
+        c_objectiveIndicator.UnlockObjective(p_objective);
+        //update all the saved conversations if they have a stitch with the objective name
         for (int t_index = 0; t_index < c_savedConversations.Count; t_index++)
         {
             for (int t_index2 = 0; t_index2 < c_savedConversations[t_index].c_stitches.Count; t_index2++)
             {
-                if (c_savedConversations[t_index].c_stitches[t_index2] == t_achievedObjective)
+                if (c_savedConversations[t_index].c_stitches[t_index2] == p_objective)
                 {
                     c_savedConversations[t_index].c_currentNode = c_savedConversations[t_index].c_stitches[t_index2];
-                    return;
+                    break;
                 }
             }
         }
