@@ -77,15 +77,16 @@ public class AchievementsView : MonoBehaviour {
         ++c_selectedAchievement;
         if (c_selectedAchievement == c_achievementSprites.Count)
             --c_selectedAchievement;
-        SetAchievementImage(c_leftAchievement, c_selectedAchievement - 1);
-        SetAchievementImage(c_midAchievement, c_selectedAchievement);
+       
         if (c_selectedAchievement == c_achievementSprites.Count - 1)
-            c_rightAchievement.color = new Color(1, 1, 1, 0);
+            c_rightAchievement.color = new Color(1, 1, 1, 0);//make it invisible
         else
         {
             SetAchievementImage(c_rightAchievement, c_selectedAchievement + 1);
-            c_leftAchievement.color = new Color(1, 1, 1, 1);
+            c_leftAchievement.color = new Color(1, 1, 1, 1);//make it visible
         }
+        SetAchievementImage(c_leftAchievement, c_selectedAchievement - 1);
+        SetAchievementImage(c_midAchievement, c_selectedAchievement);
         c_achievementText.text = c_achievements[c_selectedAchievement].Text;
     }
 }

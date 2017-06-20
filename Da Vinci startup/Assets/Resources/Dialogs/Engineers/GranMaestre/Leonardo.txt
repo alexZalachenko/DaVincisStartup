@@ -22,7 +22,11 @@
 							  "ifConditions": false,
 							  "notIfConditions": false,
 							  "flagName": "exit"
+							},
+							{
+							 "achievement": "achievement004"
 							}
+							
 			        ]
 			},
 			"hablaLeonardoNo": {

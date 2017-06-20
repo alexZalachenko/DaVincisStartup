@@ -146,7 +146,7 @@ public class JSONParser : MonoBehaviour
 
                 //found an achievement on the node
                 if (c_currentStitch["content"][t_index]["achievement"] != null)
-                    ObjectiveAchieved(c_currentStitch["content"][t_index]["achievement"]);
+                    c_achievementsManager.UnlockAchievement(c_currentStitch["content"][t_index]["achievement"]);
 
                 //found a markup on the node. Store it if it isn't exit markup
                 if (c_currentStitch["content"][t_index]["flagName"] != null)

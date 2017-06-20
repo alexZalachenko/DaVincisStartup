@@ -1,0 +1,19 @@
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.HoloLens.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.VR.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.HoloLens.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEngine.VR.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_obj\Debug\Da Vinci startup.Plugins.csprojResolveAssemblyReference.cache
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.dll
+D:\RepositorioGitHub\Da Vinci Startup\Da Vinci startup\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.pdb

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
         private set;
         get;
     }
+    private int c_movementRestrictions = 0;
 
     private void Awake()
     {
@@ -31,19 +32,28 @@ public class GameManager : MonoBehaviour {
 
     private void OnCharacterSelected(CharacterSelector.Character p_character)
     {
+        if (p_character == c_activeCharacterType)
+            return;
+
         GameObject t_oldCharacter = c_activeCharacter;
         SetCharacterState(c_activeCharacter, false);
         for (int t_character = 0; t_character < c_characters.Count; t_character++)
         {
             if (c_characters[t_character].GetComponent<Player>().Character == p_character)
+            {
+                for (int t_movementRestrictions = 0; t_movementRestrictions < c_movementRestrictions; t_movementRestrictions++)
+                    c_activeCharacter.GetComponent<MovementManager>().SetMovementAllowed(true);
                 c_activeCharacter = c_characters[t_character];
+            }
         }
 
         if (t_oldCharacter.transform.parent != c_activeCharacter)
             ChangeScenario(t_oldCharacter.transform.parent.gameObject, c_activeCharacter.transform.parent.gameObject);
 
         SetCharacterState(c_activeCharacter, true);
-        SetActiveCharacterMovement(false);
+        for (int t_movementRestrictions = 0; t_movementRestrictions < c_movementRestrictions; t_movementRestrictions++)
+            c_activeCharacter.GetComponent<MovementManager>().SetMovementAllowed(false);
+
         c_activeCharacterType = c_activeCharacter.GetComponent<Player>().Character;
     }
 
@@ -72,6 +82,10 @@ public class GameManager : MonoBehaviour {
     public void SetActiveCharacterMovement(bool p_movementState)
     {
         c_activeCharacter.GetComponent<MovementManager>().SetMovementAllowed(p_movementState);
+        if (p_movementState)
+            --c_movementRestrictions;
+        else
+            ++c_movementRestrictions;
     }
 
     public void SetActiveCharacterScenario(GameObject p_newScenario, Vector3 p_newPosition)

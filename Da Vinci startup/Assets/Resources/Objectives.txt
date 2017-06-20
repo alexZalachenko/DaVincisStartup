@@ -11,7 +11,7 @@
 			},
 			{
 				"ID" : "objective003",
-				"text" : "Ve al puerto y consigue constructores(ya no hay mas dialogos escritos)"
+				"text" : "Ve al puerto y consigue constructores(ya no hay más dialogos escritos)"
 			},
 			{
 				"ID" : "objective004",
@@ -39,7 +39,7 @@
 			},
 			{
 				"ID" : "objective010",
-				"text" : "Ve al taller y cuentale el fracaso al maestro Verrocchio"
+				"text" : "Ve al taller y cuéntale el fracaso al maestro Verrocchio"
 			},
 			{
 				"ID" : "objective011",

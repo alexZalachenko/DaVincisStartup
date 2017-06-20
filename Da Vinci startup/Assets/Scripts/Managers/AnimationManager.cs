@@ -17,7 +17,6 @@ public class AnimationManager : MonoBehaviour {
                 c_meshTransform.eulerAngles += new Vector3(0, -c_rotateMesh, 0);
                 c_lookingRight = true;
             }
-                
         }
         else
         {
@@ -27,6 +26,5 @@ public class AnimationManager : MonoBehaviour {
                 c_lookingRight = false;
             }
         }
-        
     }
 }

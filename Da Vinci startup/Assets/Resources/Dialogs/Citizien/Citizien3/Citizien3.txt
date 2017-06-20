@@ -73,7 +73,8 @@
 							  "linkPath": "loPagaMiguel",
 							  "option": "Claro hombre. Para la imaginación",
 							  "ifConditions": false,
-							  "notIfConditions": false
+							  "notIfConditions": false,
+							  "achievement": "achievement002"
 							},
 							{
 							  "linkPath": "buenoMiraMejor",

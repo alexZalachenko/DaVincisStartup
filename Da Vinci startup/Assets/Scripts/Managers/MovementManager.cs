@@ -23,6 +23,8 @@ public class MovementManager : MonoBehaviour {
     LayerMask c_raycastMask;
     private Camera c_camera;
 
+    [SerializeField]
+    private Animator c_animator;
     private AnimationManager c_animationManager;
     #endregion
 
@@ -94,6 +96,12 @@ public class MovementManager : MonoBehaviour {
             //if movement is allowed and the player has an objectivePosition move him
             if (c_mustMove)
             {
+                if (c_animator != null)
+                { 
+                    if (!c_animator.GetBool("IsMoving"))
+                        c_animator.SetBool("IsMoving", true);
+                }
+                    
                 if (c_movementObjectivePosition > transform.position.x)
                     transform.position += c_movementRight * Time.deltaTime;
                 else
@@ -101,11 +109,18 @@ public class MovementManager : MonoBehaviour {
                 if (Mathf.Abs(c_movementObjectivePosition - transform.position.x) < c_movementThreshold)
                     c_mustMove = false;
             }
+            else
+            {
+                if (c_animator != null)
+                    c_animator.SetBool("IsMoving", false);
+            }
         }
     }
 
     private void OnConversationStart()
     {
+        if (c_animator != null)
+            c_animator.SetBool("IsTalking", true);
         c_canMove += 1;
         c_mustMove = false;
     }
@@ -115,6 +130,8 @@ public class MovementManager : MonoBehaviour {
         //activate movement after a short delay, so the player won't move with the tap on the response
         if (gameObject.transform.GetChild(0).gameObject.activeSelf)
         {
+            if (c_animator != null)
+                c_animator.SetBool("IsTalking", false);
             StartCoroutine(ActivateMovement());
         }
     }
@@ -123,22 +140,29 @@ public class MovementManager : MonoBehaviour {
     {
         yield return new WaitForEndOfFrame();// WaitForSeconds(0.5f);
         c_canMove -= 1;
+        c_animator.SetBool("IsMoving", true);
     }
 
     public void SetMovementAllowed(bool p_movementState)
     {
         if (!p_movementState)
         {
-            c_canMove -= 1;
+            c_canMove += 1;
             c_mustMove = false;
         }
         else
-            c_canMove += 1;
+            c_canMove -= 1;
 
-        //if (!p_movementState)
-        //    OnConversationStart();
-        //else
-        //    OnConversationEnd();
+        if (c_canMove != 0)
+        {
+            if (c_animator != null)
+                c_animator.SetBool("IsMoving", false);
+        }
+        else if(c_mustMove)
+        {
+            if (c_animator != null)
+                c_animator.SetBool("IsMoving", true);
+        }
     }
 
     public void UpdateBounds()
@@ -151,5 +175,8 @@ public class MovementManager : MonoBehaviour {
     public void ResetMovement()
     {
         c_mustMove = false;
+        if (c_animator != null)
+            c_animator.SetBool("IsMoving", false);
     }
 }
+
